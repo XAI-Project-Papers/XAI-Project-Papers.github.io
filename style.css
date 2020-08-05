@@ -1,3 +1,111 @@
 body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#landing{
+    position: relative;
+    width: 100vw;
+    height: 65vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("kelley (1).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+    color: white;
+    margin-bottom: 45px;
+}
+
+#pageTitle{
+    font-weight: 700;
+    font-size: 40px;
+    overflow-wrap: break-word;
+}
+
+#searchBar{
+    width: 45vw;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 2%;
+}
+
+.panels{
+    margin: 0 auto;
+    max-width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.panel{
+    box-shadow: 10px 10px 15px lightgrey;
+    border-top: 20px solid #DC4405;
+}
+
+.panelContent{
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 20px;
+    background: linear-gradient(to bottom, lightgrey, #fdfdfd);
+}
+
+.panelExtras{
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #444444;
+    color: white;
+    font-size: 0.8em;
+    align-items: center;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+}
+
+.date i{
+    font-size: 1.5em;
+    margin-right: 8px;
+}
+
+.pubLink{
+    color: white;
+    text-decoration: none;
+}
+
+.pubLink:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 700px){
+    .center{
+        position: absolute;
+        width: 90vw;
+        justify-items: center;
+        top: 50%;
+        z-index: 1;
+        padding: 0;
+        margin: 0;
+    }
+
+    #searchBar{
+        width: 80vw;
+        height: 35px;
+        border: 1px solid white;
+        border-radius: 5px;
+        outline: none;
+        padding: 0 2%;
+    }
 }

@@ -4,10 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>XAI Project Papers</title>
+    <link rel="icon" href="OSU.png">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <h1>XAI-Project-Papers</h1>
+    <div id="landing">
+        <div class="center">
+            <h1 id="pageTitle">OSU XAI Project Papers</h1>
+            <input type="text" placeholder="Search for a publication..." id="searchBar" onchange="search()">
+            <p id="titleDescription">Publications from Oregon State University's eXplainable Artificial Intelligence Project</p>
+        </div>
+    </div>
+
+    <div class="panels">
+        <div class="panel">
+            <div class="panelContent">
+                <h2 class="pubTitle">Keeping it "organized and logical" after-action review for AI (AAR/AI)</h2>
+                <p class="pubDes">Explainable AI (XAI) is growing in importance as AI pervades modern society, but few have studied how XAI can directly support people trying to assess an AI agent...</p>
+            </div>
+            <div class="panelExtras">
+                <div class="date">
+                    <i class="material-icons">event</i>
+                    <p>3/7/2020</p>
+                </div>
+                <div>
+                    <a href="ftp://ftp.cs.orst.edu/pub/burnett/iui20-AARAI.pdf" class="pubLink">View Publication</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
