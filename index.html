@@ -10,22 +10,36 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <div id="landing">
-        <div class="center">
-            <h1 id="pageTitle">OSU XAI Project Papers</h1>
-            <input type="text" placeholder="Search for a publication..." id="searchBar" onchange="search()">
-            <p id="titleDescription">Publications from Oregon State University's eXplainable Artificial Intelligence Project</p>
+    <div id="parallax">
+        <div id="landing">
+            <div class="center">
+                <h1 id="pageTitle">OSU XAI Project Papers</h1>
+                <input type="text" placeholder="Search for a publication..." id="searchBar" onchange="search()">
+                <p id="titleDescription">Publications from Oregon State University's eXplainable Artificial Intelligence Project</p>
+            </div>
         </div>
     </div>
 
-    <div class="panels">
+    <div id="toggleView">
+        <div class="iconText" id="listView" onclick="lists()">
+            <i class="material-icons">list</i>
+            <p>List View</p>
+        </div>
+    
+        <div class="iconText" id="panelView" onclick="panels()">
+            <i class="material-icons">apps</i>
+            <p>Panel View</p>
+        </div>
+    </div>
+
+    <div id="panels" class="panels">
         <div class="panel">
             <div class="panelContent">
                 <h2 class="pubTitle">Keeping it "organized and logical" after-action review for AI (AAR/AI)</h2>
                 <p class="pubDes">Explainable AI (XAI) is growing in importance as AI pervades modern society, but few have studied how XAI can directly support people trying to assess an AI agent...</p>
             </div>
             <div class="panelExtras">
-                <div class="date">
+                <div class="iconText">
                     <i class="material-icons">event</i>
                     <p>3/7/2020</p>
                 </div>
@@ -33,6 +47,17 @@
                     <a href="ftp://ftp.cs.orst.edu/pub/burnett/iui20-AARAI.pdf" class="pubLink">View Publication</a>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div id="lists" class="lists hidden">
+        <div class="yearBlock">
+            <h1 class="year">2020</h1>
+            <ol>
+                <li>
+                    <a href="ftp://ftp.cs.orst.edu/pub/burnett/iui20-AARAI.pdf">Keeping it "organized and logical" after-action review for AI (AAR/AI)</a>
+                </li>
+            </ol>
         </div>
     </div>
 
