@@ -68,6 +68,10 @@ body{
     background: linear-gradient(to bottom, lightgrey, #fdfdfd);
 }
 
+.pubDes{
+    font-size: 0.8em;
+}
+
 .panelExtras{
     padding: 5px 20px;
     display: flex;
