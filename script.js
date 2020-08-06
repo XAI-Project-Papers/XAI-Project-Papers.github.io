@@ -1,10 +1,11 @@
 //alert("This page is under development");
 
+
 function lists(){
     var panels = document.getElementById("panels");
     var lists = document.getElementById("lists");
     panels.style.display = "none";
-    lists.classList.remove("hidden")
+    lists.classList.remove("hidden");
 }
 
 function panels(){
@@ -17,15 +18,13 @@ function panels(){
 function enter(event){
     var searchInput = document.getElementById("searchBar").value;
     if (event.keyCode == 13 || event.which == 13){
+        var searchResults = document.getElementById("searchResults");
+        searchResults.innerHTML = "Search Results For '" + searchInput + "'";
+        searchResults.classList.remove("hidden");
         search();
-        /* if (searchInput == "" || searchInput == " "){
-            var searchResults = document.getElementById("searchResults");
-            searchResults.classList.add("hidden");
-        }
-        else{
-            searchResults.classList.remove("hidden");
-            search();
-        } */
+    }
+    else if (!searchInput){
+        window.location.reload();
     }
 }
 
@@ -35,16 +34,25 @@ function search(){
 
     var h2 = document.getElementsByClassName("pubTitle");
     var p = document.getElementsByClassName("pubDes");
-    
-    for (i=0; i < h2.length; i++){
-        var valH2 = h2[i].innerText.toUpperCase();
-        if (valH2.indexOf(search)>-1){
-            h2[i].style.zIndex = '10000000';
-            h2[i].style.backgroundColor = 'yellow'
+    var h2ExecuteSearchOn = executeSearchOn(h2, search);
+    var pExecuteSearchOn = executeSearchOn(p, search);
+    if (h2ExecuteSearchOn[1] && pExecuteSearchOn[1]){
+        var item1 = h2ExecuteSearchOn[0];
+        findAndHideParentPanel(item1);
+    }
+
+}
+
+function executeSearchOn(elementVar, searchItem, item){
+    for (i=0; i < elementVar.length; i++){
+        var val = elementVar[i].innerText.toUpperCase();
+        if (val.indexOf(searchItem)>-1){
+            elementVar[i].style.zIndex = '10000000';
+            elementVar[i].style.backgroundColor = 'yellow';
         }
         else{
-            var item = h2[i];
-            findAndHideParentPanel(item);
+            var item = elementVar[i];
+            return [item, true];
         }
     }
 }
