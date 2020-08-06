@@ -1,18 +1,25 @@
 //alert("This page is under development");
 
-
 function lists(){
     var panels = document.getElementById("panels");
     var lists = document.getElementById("lists");
+    var abstractView = document.getElementById("abstractView");
+    var refView = document.getElementById("refView");
     panels.style.display = "none";
     lists.classList.remove("hidden");
+    abstractView.style.display = "none";
+    refView.style.display="none"
 }
 
 function panels(){
     var panels = document.getElementById("panels");
     var lists = document.getElementById("lists");
+    var abstractView = document.getElementById("abstractView");
+    var refView = document.getElementById("refView");
     panels.style.display = "grid";
     lists.classList.add("hidden");
+    abstractView.style.display = "";
+    refView.style.display=""
 }
 
 function enter(event){
@@ -45,7 +52,7 @@ function search(){
 
 }
 
-function executeSearchOn(elementVar, searchItem, item){
+function executeSearchOn(elementVar, searchItem){
     for (i=0; i < elementVar.length; i++){
         var val = elementVar[i].innerText.toUpperCase();
         if (val.indexOf(searchItem)>-1){
@@ -88,5 +95,31 @@ function findClass(innerObject, searchClass){
     }
     else{
         return false;
+    }
+}
+
+function switchToAbstract(){
+    var abstract = document.getElementsByClassName("abstract");
+    var aLength = abstract.length;
+    var panDes = document.getElementsByClassName("panDes");
+    var length = panDes.length;
+    for (var i=0; i<length; i++){
+        panDes[i].style.display="none";
+    }
+    for (var i=0; i<aLength; i++){
+        abstract[i].style.display="inline";
+    }
+}
+
+function switchToReference(){
+    var abstract = document.getElementsByClassName("abstract");
+    var aLength = abstract.length;
+    var panDes = document.getElementsByClassName("panDes");
+    var length = panDes.length;
+    for (var i=0; i<length; i++){
+        panDes[i].style.display="inline";
+    }
+    for (var i=0; i<aLength; i++){
+        abstract[i].style.display="none";
     }
 }

@@ -47,6 +47,45 @@ body{
     color: #444444;
 }
 
+#filterContent{
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    align-items: center;
+    position: absolute;
+    left: 9.5vw;
+    min-width: 190px;
+}
+
+#refView{
+    background-color: lightgrey;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+
+#refView:hover, #abstractView:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), #DC4405;
+    border: 1px solid #DC4405;
+    color: white;
+}
+
+#abstractView{
+    background-color: lightgrey;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    position: absolute;
+    left: 0;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+
 #panels{
     margin: 0 auto;
     margin-top: 17vh;
@@ -68,8 +107,12 @@ body{
     background: linear-gradient(to bottom, lightgrey, #fdfdfd);
 }
 
-.pubDes{
+.panDes, .abstract{
     font-size: 0.8em;
+}
+
+.panDes{
+    display: none;
 }
 
 .panelExtras{
