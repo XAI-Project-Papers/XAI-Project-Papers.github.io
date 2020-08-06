@@ -107,7 +107,7 @@ body{
     background: linear-gradient(to bottom, lightgrey, #fdfdfd);
 }
 
-.panDes, .abstract{
+.panDes, .pubDes, .abstract{
     font-size: 0.8em;
 }
 
