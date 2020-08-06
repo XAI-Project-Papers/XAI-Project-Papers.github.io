@@ -15,6 +15,7 @@ body{
 
 #landing{
     position: relative;
+    background-attachment: fixed;
     width: 100vw;
     height: 65vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("kelley (1).jpg");
