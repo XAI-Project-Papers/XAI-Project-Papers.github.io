@@ -34,9 +34,11 @@ function search(){
 
     var h2 = document.getElementsByClassName("pubTitle");
     var p = document.getElementsByClassName("pubDes");
+    var date = document.getElementsByClassName("date");
     var h2ExecuteSearchOn = executeSearchOn(h2, search);
     var pExecuteSearchOn = executeSearchOn(p, search);
-    if (h2ExecuteSearchOn[1] && pExecuteSearchOn[1]){
+    var dateExecuteSearchOn = executeSearchOn(date, search);
+    if (h2ExecuteSearchOn[1] && pExecuteSearchOn[1] && dateExecuteSearchOn[1]){
         var item1 = h2ExecuteSearchOn[0];
         findAndHideParentPanel(item1);
     }
@@ -48,7 +50,12 @@ function executeSearchOn(elementVar, searchItem, item){
         var val = elementVar[i].innerText.toUpperCase();
         if (val.indexOf(searchItem)>-1){
             elementVar[i].style.zIndex = '10000000';
-            elementVar[i].style.backgroundColor = 'yellow';
+            if (findClass(elementVar[i], "date")){
+                elementVar[i].style.backgroundColor = 'red';
+            }
+            else{
+                elementVar[i].style.backgroundColor = 'yellow';
+            }
         }
         else{
             var item = elementVar[i];
@@ -68,8 +75,18 @@ function findAndHideParentPanel(innerObject){
         }
         else {
             object = object.parentNode;
-            
         }
     }
     object.classList.add("hidden");
+}
+
+function findClass(innerObject, searchClass){
+    var object = innerObject;
+    var classesArray = classesArray = object.className.split(/\s+/);
+    if (classesArray.indexOf(searchClass) > -1) {
+        return true;
+    }
+    else{
+        return false;
+    }
 }
