@@ -10,13 +10,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <div id="parallax">
-        <div id="landing">
-            <div class="center">
-                <h1 id="pageTitle">OSU XAI Project Papers</h1>
-                <input type="text" placeholder="Search for a publication..." id="searchBar" onchange="search()">
-                <p id="titleDescription">Publications from Oregon State University's eXplainable Artificial Intelligence Project</p>
-            </div>
+    <div id="landing">
+        <div class="center">
+            <h1 id="pageTitle">OSU XAI Project Papers</h1>
+            <input type="text" placeholder="Search for a publication..." id="searchBar" onkeyup="enter(event)">
+            <p id="titleDescription">Publications from Oregon State University's eXplainable Artificial Intelligence Project</p>
         </div>
     </div>
 
