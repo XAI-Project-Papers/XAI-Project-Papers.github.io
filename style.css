@@ -40,9 +40,15 @@ body{
     padding: 0 2%;
 }
 
+#searchResults{
+    position: absolute;
+    left: 9.5vw;
+    color: #444444;
+}
+
 #panels{
     margin: 0 auto;
-    margin-top: 15vh;
+    margin-top: 17vh;
     max-width: 80vw;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

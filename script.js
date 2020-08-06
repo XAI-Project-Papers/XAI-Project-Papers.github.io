@@ -15,8 +15,17 @@ function panels(){
 }
 
 function enter(event){
+    var searchInput = document.getElementById("searchBar").value;
     if (event.keyCode == 13 || event.which == 13){
         search();
+        /* if (searchInput == "" || searchInput == " "){
+            var searchResults = document.getElementById("searchResults");
+            searchResults.classList.add("hidden");
+        }
+        else{
+            searchResults.classList.remove("hidden");
+            search();
+        } */
     }
 }
 
@@ -43,19 +52,16 @@ function search(){
 function findAndHideParentPanel(innerObject){
     var object = innerObject;
     var validation = false;
-    while(!validation){
-        //alert("works");//This alert shows up!!!!!!!!!!
-        if (object.classList.indexOf(panel) > -1){
-            break;
-            alert("works");//This alert does not show up
+    var classesArray = null;
+    while (!validation) {
+        classesArray = object.className.split(/\s+/);
+        if (classesArray.indexOf("panel") > -1) {
             validation = true;
         }
-        else{
-            break;
-            alert("works");//This alert does not show up
+        else {
             object = object.parentNode;
+            
         }
     }
-    alert("works");//This still doesnt shoew up !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     object.classList.add("hidden");
 }
