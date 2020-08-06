@@ -26,9 +26,12 @@ function enter(event){
     var searchInput = document.getElementById("searchBar").value;
     if (event.keyCode == 13 || event.which == 13){
         var searchResults = document.getElementById("searchResults");
+        var panels = document.getElementById("panels");
         searchResults.innerHTML = "Search Results For '" + searchInput + "'";
         searchResults.classList.remove("hidden");
+        panels.style.marginTop = "150px";
         search();
+        checkForResults();
     }
     else if (!searchInput){
         window.location.reload();
@@ -126,5 +129,22 @@ function switchToReference(){
     }
     for (var i=0; i<aLength; i++){
         abstract[i].style.display="none";
+    }
+}
+
+function checkForResults(){
+    var panels = document.getElementById("panels");
+    var noResults = document.getElementById("noResults");
+    var length = panels.length;
+    var numberOfActivePanels = 0;
+    var classesArray = null;
+    for (var i = 0; i<length; i++){
+        classesArray = panels.className.split(/\s+/);
+        if (classesArray.indexOf("hidden") > -1){
+            numberOfActivePanels += 1;
+        }
+    }
+    if (numberOfActivePanels == 0){
+        noResults.style.display = "inline";
     }
 }
