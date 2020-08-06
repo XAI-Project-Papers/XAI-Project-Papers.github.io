@@ -41,11 +41,15 @@ function search(){
 
     var h2 = document.getElementsByClassName("pubTitle");
     var p = document.getElementsByClassName("pubDes");
+    var ab = document.getElementsByClassName("abstract");
     var date = document.getElementsByClassName("date");
+
     var h2ExecuteSearchOn = executeSearchOn(h2, search);
     var pExecuteSearchOn = executeSearchOn(p, search);
+    var abExecuteSearchOn = executeSearchOn(ab, search);
     var dateExecuteSearchOn = executeSearchOn(date, search);
-    if (h2ExecuteSearchOn[1] && pExecuteSearchOn[1] && dateExecuteSearchOn[1]){
+
+    if (h2ExecuteSearchOn[1] && pExecuteSearchOn[1] && dateExecuteSearchOn[1] && abExecuteSearchOn[1]){
         var item1 = h2ExecuteSearchOn[0];
         findAndHideParentPanel(item1);
     }
@@ -99,6 +103,7 @@ function findClass(innerObject, searchClass){
 }
 
 function switchToAbstract(){
+    window.location.reload();
     var abstract = document.getElementsByClassName("abstract");
     var aLength = abstract.length;
     var panDes = document.getElementsByClassName("panDes");
