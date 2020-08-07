@@ -18,7 +18,7 @@ body{
     background-attachment: fixed;
     width: 100vw;
     height: 65vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images and icons/kelley (1).jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url("../images and icons/kelley(1).jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: top;
