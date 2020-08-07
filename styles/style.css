@@ -55,6 +55,7 @@ body{
     position: absolute;
     left: 9.5vw;
     padding-top: 80px;
+    z-index: 0;
 }
 
 #filterContent{
@@ -197,6 +198,8 @@ body{
     border-radius: 5px;
     padding: 13px 30px 25px 35px;
     max-width: 84vw;
+    background-color: white;
+    z-index: 1;
 }
 
 .yearBlock a{

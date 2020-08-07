@@ -19,7 +19,7 @@ function panels(){
     panels.style.display = "grid";
     lists.classList.add("hidden");
     abstractView.style.display = "";
-    refView.style.display=""
+    refView.style.display="";
 }
 
 function enter(event){
@@ -27,9 +27,11 @@ function enter(event){
     if (event.keyCode == 13 || event.which == 13){
         var searchResults = document.getElementById("searchResults");
         var panels = document.getElementById("panels");
-        searchResults.innerHTML = "Search Results For '" + searchInput + "'";
+        var lists = document.getElementById("lists");
+        searchResults.innerHTML = "Search results for '" + searchInput + "' in abstract and/or reference/list view";
         searchResults.classList.remove("hidden");
         panels.style.marginTop = "190px";
+        lists.style.marginTop = "190px";
         search();
         checkForResults();
     }
