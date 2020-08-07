@@ -18,7 +18,7 @@ body{
     background-attachment: fixed;
     width: 100vw;
     height: 65vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("kelley (1).jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images and icons/kelley (1).jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: top;
@@ -193,10 +193,8 @@ body{
     margin-top: 20vh;
     border: 1px solid lightgrey;
     border-radius: 5px;
-    background: linear-gradient(to bottom, lightgrey, white);
     padding: 13px 30px 25px 35px;
     max-width: 84vw;
-    box-shadow: 10px 10px 15px lightgrey;
 }
 
 .yearBlock a{
