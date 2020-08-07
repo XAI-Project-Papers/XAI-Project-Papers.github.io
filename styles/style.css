@@ -239,4 +239,10 @@ body{
     #panels{
         margin-top: 150px;
     }
+    #searchResults{
+        padding-top: 80px;
+    }
+    #noResults{
+        padding-top: 110px;
+    }
 }

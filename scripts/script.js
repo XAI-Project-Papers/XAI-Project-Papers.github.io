@@ -29,7 +29,7 @@ function enter(event){
         var panels = document.getElementById("panels");
         searchResults.innerHTML = "Search Results For '" + searchInput + "'";
         searchResults.classList.remove("hidden");
-        panels.style.marginTop = "150px";
+        panels.style.marginTop = "190px";
         search();
         checkForResults();
     }
