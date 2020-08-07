@@ -83,6 +83,7 @@ body{
     background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), #DC4405;
     border: 1px solid #DC4405;
     color: white;
+    cursor: pointer;
 }
 
 #abstractView{
@@ -177,6 +178,7 @@ body{
 #listView:hover, #panelView:hover{
     background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), lightgrey;
     color: white;
+    cursor: pointer;
 }
 
 #panelView{
@@ -215,7 +217,6 @@ body{
         padding: 0;
         margin: 0;
     }
-
     #searchBar{
         width: 80vw;
         height: 35px;
@@ -223,5 +224,19 @@ body{
         border-radius: 5px;
         outline: none;
         padding: 0 2%;
+    }
+    #filterContent{
+        padding: 5px 20px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8em;
+        align-items: center;
+        position: absolute;
+        left: 9.5vw;
+        margin-top: 50px;
+        min-width: 190px;
+    }
+    #panels{
+        margin-top: 150px;
     }
 }
