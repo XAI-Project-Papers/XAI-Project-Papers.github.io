@@ -69,14 +69,26 @@ body{
     min-width: 190px;
 }
 
-#refView{
+.refAndAbstractLight{
     background-color: lightgrey;
+    border: 1px solid lightgrey;
+}
+
+#refView{
     display: inline-flex;
     align-items: center;
     padding: 5px;
     position: absolute;
     right: 0;
-    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+
+#abstractView{
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    position: absolute;
+    left: 0;
     border-radius: 10px;
 }
 
@@ -87,15 +99,10 @@ body{
     cursor: pointer;
 }
 
-#abstractView{
-    background-color: lightgrey;
-    display: inline-flex;
-    align-items: center;
-    padding: 5px;
-    position: absolute;
-    left: 0;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
+.refAndAbstractDefault{
+    background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), #DC4405;
+    border: 1px solid #DC4405;
+    color: white;
 }
 
 #panels{
@@ -180,6 +187,11 @@ body{
     background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), lightgrey;
     color: white;
     cursor: pointer;
+}
+
+.panelAndListDefault{
+    background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), lightgrey;
+    color: white;
 }
 
 #panelView{
