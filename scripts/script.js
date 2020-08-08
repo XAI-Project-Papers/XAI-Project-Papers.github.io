@@ -35,7 +35,7 @@ function enter(event){
         search();
         checkForResults();
     }
-    else if (!searchInput){
+    else if (!searchInput || event.keyCode == 8 || event.which == 8){
         window.location.reload();
     }
 }
