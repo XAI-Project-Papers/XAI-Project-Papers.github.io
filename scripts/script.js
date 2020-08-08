@@ -1,6 +1,7 @@
 //alert("This page is under development");
 
 //functions with TODOs/questions in them: event, search, executeSearchOn, findAndHideParentPanel, checkForResults
+//TODO: implement a system in which it displays both reference and abstract view if both contain a search input
 
 //hides panel view and associated buttons, shows lists view
 function lists(){
