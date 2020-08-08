@@ -1,5 +1,7 @@
 //alert("This page is under development");
 
+//functions with TODOs/questions in them: event, search, executeSearchOn, findAndHideParentPanel, checkForResults
+
 //hides panel view and associated buttons, shows lists view
 function lists(){
 
@@ -79,7 +81,7 @@ function search(){
     var abExecuteSearchOn = executeSearchOn(ab, search);
     var dateExecuteSearchOn = executeSearchOn(date, search);
     
-    //if no results were found in a [certain panel???], hide that panel
+    //if no results were found in a [certain panel???], hide that panel using findAndHideParentPanel function
     if (h2ExecuteSearchOn[1] && pExecuteSearchOn[1] && dateExecuteSearchOn[1] && abExecuteSearchOn[1]){
         var item1 = h2ExecuteSearchOn[0];
         findAndHideParentPanel(item1);
@@ -87,92 +89,151 @@ function search(){
 
 }
 
+//locates a search input within an element, if nothing is located: (1) item index is returned, (2) true is also returned to indicate nothing was found (nothing was found = true)
 function executeSearchOn(elementVar, searchItem){
+    //for every item within an elementVar (ex. for every word/letter within a h2 element)
     for (i=0; i < elementVar.length; i++){
+        //capitalize item text (e.g. capitalize word/letter within a h2 element)
         var val = elementVar[i].innerText.toUpperCase();
+        //if item text contains search input
         if (val.indexOf(searchItem)>-1){
+            //increase the z-index of that element [or word???]
             elementVar[i].style.zIndex = '10000000';
+            //if the element [or word???] is a date, set the background color to red
             if (findClass(elementVar[i], "date")){
                 elementVar[i].style.backgroundColor = 'red';
             }
+            //if the element is not a date, set the background color to yellow
             else{
                 elementVar[i].style.backgroundColor = 'yellow';
             }
         }
+        //if item text does not contain search input
         else{
+            //return item and true
             var item = elementVar[i];
             return [item, true];
         }
     }
 }
 
+//finds and hides a parent panel given the item
 function findAndHideParentPanel(innerObject){
+
+    //variable definitions/initializations
     var object = innerObject;
     var validation = false;
     var classesArray = null;
+
+    //while validation is false
     while (!validation) {
+        //classes array is an array of an element's classes
         classesArray = object.className.split(/\s+/);
+
+        //if an object has a class of panel
         if (classesArray.indexOf("panel") > -1) {
+            //set validation to true so the while loop is escaped and not re-entered
             validation = true;
         }
+        //if an object does not have a class of panel, set the grab the parent element of an object, and re-enter while loop
         else {
             object = object.parentNode;
         }
     }
+    //once a panel is found, hide it
+    //TODO: change this to display style (try to eliminate usage of hidden class)
     object.classList.add("hidden");
 }
 
+//check if an object has a class given the class you are searching for and the element you are checking
 function findClass(innerObject, searchClass){
+
+    //variable definition/initialization
     var object = innerObject;
-    var classesArray = classesArray = object.className.split(/\s+/);
+    var classesArray = classesArray = object.className.split(/\s+/);//an array of the element/object's classes
+
+    //if the element has the specified class
     if (classesArray.indexOf(searchClass) > -1) {
+        //return true indicating that the object has the specified class
         return true;
     }
+    //if the element does not have the specified class
     else{
+        //return false indicating that the object does not have the specified class
         return false;
     }
 }
 
+//switch the content inside a panel so it displays the abstract of the publication
 function switchToAbstract(){
+    //reload the window [so that previous search results don't show up???]
     window.location.reload();
+
+    //variable definition
     var abstract = document.getElementsByClassName("abstract");
-    var aLength = abstract.length;
+    var aLength = abstract.length;//number of elements with a certain class name (e.g. number of items with a class of abstract)
     var panDes = document.getElementsByClassName("panDes");
-    var length = panDes.length;
+    var length = panDes.length;//number of items with a class name of panDes (reference items) [rename to something reference related???]
+
+    //for every reference
     for (var i=0; i<length; i++){
+        //hide the reference/don't display it
         panDes[i].style.display="none";
     }
+
+    //for every abstract
     for (var i=0; i<aLength; i++){
+        //show the abstract/display it
         abstract[i].style.display="inline";
     }
 }
 
+//switch the content inside a panel so it displays the reference of the publication
 function switchToReference(){
+
+    //variable definition --look at previous function for more specifics
     var abstract = document.getElementsByClassName("abstract");
     var aLength = abstract.length;
     var panDes = document.getElementsByClassName("panDes");
     var length = panDes.length;
+
+    //for every reference
     for (var i=0; i<length; i++){
+        //display it
         panDes[i].style.display="inline";
     }
+
+    //for every abstract
     for (var i=0; i<aLength; i++){
+        //hide it
         abstract[i].style.display="none";
     }
 }
 
+//check if a search has any results (in abstract and/or reference/list view)
 function checkForResults(){
+
+    //variable definition/initialization
     var panels = document.getElementById("panels");
     var noResults = document.getElementById("noResults");
-    var length = panels.length;
+    var length = panels.length;//number panels
     var numberOfActivePanels = 0;
     var classesArray = null;
+
+    //for every panel (for every item in panels div)
     for (var i = 0; i<length; i++){
+        //make a list of its classes
         classesArray = panels.className.split(/\s+/);
+
+        //if the panel has a class of hidden (if the panel is hidden)
         if (classesArray.indexOf("hidden") > -1){
+            //add one to the number of active panels [say it is active???]
             numberOfActivePanels += 1;
         }
     }
+    //if no panels are active
     if (numberOfActivePanels == 0){
+        //display message saying that no search results exist
         noResults.style.display = "inline";
     }
 }
