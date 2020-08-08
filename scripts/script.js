@@ -8,7 +8,7 @@ function lists(){
     panels.style.display = "none";
     lists.classList.remove("hidden");
     abstractView.style.display = "none";
-    refView.style.display="none"
+    refView.style.display="none";
 }
 
 function panels(){
