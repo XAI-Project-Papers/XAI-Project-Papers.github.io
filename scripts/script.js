@@ -2,6 +2,7 @@
 
 //hides panel view and associated buttons, shows lists view
 function lists(){
+
     //variable definitions
     var panels = document.getElementById("panels");
     var lists = document.getElementById("lists");
@@ -18,6 +19,7 @@ function lists(){
 
 //hides lists, shows panels and associated buttons
 function panels(){
+
     //variable definitions
     var panels = document.getElementById("panels");
     var lists = document.getElementById("lists");
@@ -32,25 +34,37 @@ function panels(){
     refView.style.display="";
 }
 
+//decides when a search should occur, makes "no results" message appear, reloads window after search for user convenience
 function enter(event){
+
+    //variable definitions
     var searchInput = document.getElementById("searchBar").value;
+    var searchResults = document.getElementById("searchResults");
+    var panels = document.getElementById("panels");
+    var lists = document.getElementById("lists");
+
+    //TODO: make all panels visible if a new search is taking place (change event to oninput, remove/adapt else if)
+
+    //if enter key is pressed
     if (event.keyCode == 13 || event.which == 13){
-        var searchResults = document.getElementById("searchResults");
-        var panels = document.getElementById("panels");
-        var lists = document.getElementById("lists");
-        searchResults.innerHTML = "Search results for '" + searchInput + "' in abstract and/or reference/list view";
-        searchResults.classList.remove("hidden");
-        panels.style.marginTop = "190px";
-        lists.style.marginTop = "190px";
-        search();
-        checkForResults();
+        searchResults.innerHTML = "Search results for '" + searchInput + "' in abstract and/or reference/list view"; //writing search results message
+        searchResults.classList.remove("hidden"); //displaying search results message
+        panels.style.marginTop = "190px"; //adding spacing above panels so search message does not overlap
+        lists.style.marginTop = "190px"; //adding spacing above lists so search message does not overlap
+        search(); //running search function
+        checkForResults(); //running checkForResults function (if no panels are present, displays no results message)
     }
-    else if (!searchInput || event.keyCode == 8 || event.which == 8){
+
+    //if nothing is in search bar [or] backspace/delete is pressed [or] input is changed, window is reloaded
+    //this is useful if: (1) the user wishes look at all panels after a search is completed or (2) change their search without viewing old results
+    else if (!searchInput || event.keyCode == 8 || event.which == 8 || event.keyCode == 46 || event.which == 46){
         window.location.reload();
     }
 }
 
 function search(){
+
+    //variable definitions
     var searchInput = document.getElementById("searchBar").value;
     var search = searchInput.toUpperCase();
 
@@ -59,11 +73,13 @@ function search(){
     var ab = document.getElementsByClassName("abstract");
     var date = document.getElementsByClassName("date");
 
+    //getting executeSearchOn function return value (list) for all search elements (headings, reference/publication descriptions, abstracts, and dates)
     var h2ExecuteSearchOn = executeSearchOn(h2, search);
     var pExecuteSearchOn = executeSearchOn(p, search);
     var abExecuteSearchOn = executeSearchOn(ab, search);
     var dateExecuteSearchOn = executeSearchOn(date, search);
-
+    
+    //if no results were found in a [certain panel???], hide that panel
     if (h2ExecuteSearchOn[1] && pExecuteSearchOn[1] && dateExecuteSearchOn[1] && abExecuteSearchOn[1]){
         var item1 = h2ExecuteSearchOn[0];
         findAndHideParentPanel(item1);
