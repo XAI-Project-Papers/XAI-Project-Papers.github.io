@@ -1,23 +1,33 @@
 //alert("This page is under development");
 
+//hides panel view and associated buttons, shows lists view
 function lists(){
+    //variable definitions
     var panels = document.getElementById("panels");
     var lists = document.getElementById("lists");
     var abstractView = document.getElementById("abstractView");
     var refView = document.getElementById("refView");
-    panels.style.display = "none";
-    lists.classList.remove("hidden");
+
+    panels.style.display = "none"; //hiding panels
+    lists.style.display = "inline"; //showing lists, "inline" is used instead of "" because lists is set to display: "none" as a default
+
+    //hiding abstract and reference view buttons
     abstractView.style.display = "none";
     refView.style.display="none";
 }
 
+//hides lists, shows panels and associated buttons
 function panels(){
+    //variable definitions
     var panels = document.getElementById("panels");
     var lists = document.getElementById("lists");
     var abstractView = document.getElementById("abstractView");
     var refView = document.getElementById("refView");
-    panels.style.display = "grid";
-    lists.classList.add("hidden");
+
+    panels.style.display = ""; //showing panels, "" sets display style to CSS default
+    lists.style.display = "none"; //hiding lists
+
+    //showing abstract and reference view buttons
     abstractView.style.display = "";
     refView.style.display="";
 }

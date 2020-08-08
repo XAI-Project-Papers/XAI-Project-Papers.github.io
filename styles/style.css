@@ -191,6 +191,10 @@ body{
     left: 0;
 }
 
+#lists{
+    display: none;
+}
+
 .yearBlock{
     margin-left: 9vh;
     margin-top: 20vh;
