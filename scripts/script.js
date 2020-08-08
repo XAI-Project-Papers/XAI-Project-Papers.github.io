@@ -16,6 +16,22 @@ function executeSearchOn(elementVar, searchItem){
 function findAndHideParentPanel(innerObject){
 }
 
+//check if a search has any results (in abstract and/or reference/list view)
+function checkForResults(){
+}
+
+/* 
+Search Algorithm:
+[1] Get user input
+[2] show abstract and reference view
+[3] check if any panel elements have the input
+[4] if an element has the input, highlight the input in the element
+[5] if a panel's elements don't have the input, hide the panel
+[6] check if any list elements have the input
+[7] if a list element has the input, highlight the input in the element
+[8] if the searchbox is cleared, reload the page
+*/
+
 /* //check if an object has a class given the class you are searching for and the element you are checking
 function findClass(innerObject, searchClass){
 
@@ -34,10 +50,6 @@ function findClass(innerObject, searchClass){
         return false;
     }
 } */
-
-//check if a search has any results (in abstract and/or reference/list view)
-function checkForResults(){
-}
 
 
 //________________________________________________________________________________________________________
@@ -58,7 +70,6 @@ function lists(){
     lists.style.display = "inline"; //showing lists, "inline" is used instead of "" because lists is set to display: "none" as a default
     panelView.classList.remove("panelAndListDefault");
     listView.classList.add("panelAndListDefault");
-    
 
     //hiding abstract and reference view buttons
     abstractView.style.display = "none";
