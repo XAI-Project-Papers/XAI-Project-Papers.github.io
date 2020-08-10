@@ -18,10 +18,10 @@ body{
     background-attachment: fixed;
     width: 100vw;
     height: 65vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url("../images and icons/kelley(1).jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("../images and icons/Crop5Edit.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: top;
+    background-position-y: center;
     color: white;
     margin-bottom: 45px;
 }
