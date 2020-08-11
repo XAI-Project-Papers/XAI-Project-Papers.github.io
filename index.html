@@ -13,18 +13,18 @@
     <div id="landing">
         <div class="center">
             <h1 id="pageTitle">OSU XAI Project Papers</h1>
-            <input type="text" placeholder="Search for a publication..." id="searchBar" onkeyup="enter(event)">
+            <input type="text" placeholder="Search for a publication..." id="searchBar" onkeyup="search()">
             <p id="titleDescription">Publications from Oregon State University's eXplainable Artificial Intelligence Project</p>
         </div>
     </div>
 
     <div id="toggleView">
-        <div class="iconText" id="listView" onclick="lists()">
+        <div class="iconText" id="listView" onclick="listsView()">
             <i class="material-icons">list</i>
             <p>List View</p>
         </div>
     
-        <div class="iconText panelAndListDefault" id="panelView" onclick="panels()">
+        <div class="iconText panelAndListDefault" id="panelView" onclick="panelsView()">
             <i class="material-icons">apps</i>
             <p>Panel View</p>
         </div>
@@ -37,8 +37,10 @@
     <h3 id="searchResults" class="hidden"></h3>
     <h3 id="noResults">No Results Were Found</h3>
 
+
+    <!-- TODO: rename overlapping "panel" classes/ids -->
     <div id="panels" class="panels">
-        <div class="panel">
+        <div class="panel" id="panel1">
             <div class="panelContent">
                 <h2 class="pubTitle">Keeping it "organized and logical" after-action review for AI (AAR/AI)</h2>
                 <p class="pubDes panDes">Theresa Mai, Roli Khanna, Jonathan Dodge, Jed Irvine, Kin-Ho Lam, Zhengxian Lin, Nicholas Kiddle, Evan Newman, Sai Raja, Caleb Matthews, Christopher Perdriau, Margaret Burnett, and Alan Fern. 2020. Keeping It “Organized and Logical”: After-Action Review for AI (AAR/AI). In 25th International Conference on Intelligent User Interfaces (IUI ’20), March 17–20, 2020, Cagliari, Italy. ACM, New York, NY, USA, 12 pages.<a href="https://doi.org/10.1145/3377325.3377525" target="_blank"> https://doi.org/10.1145/3377325.3377525</a></p>

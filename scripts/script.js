@@ -5,8 +5,8 @@
 function enter(event){
 }
 
-function search(){
-}
+/* function search(){
+} */
 
 //locates a search input within an element, if nothing is located: (1) item index is returned, (2) true is also returned to indicate nothing was found (nothing was found = true)
 function executeSearchOn(elementVar, searchItem){
@@ -32,6 +32,54 @@ Search Algorithm:
 [8] if the searchbox is cleared, reload the page
 */
 
+function search(){
+    var input = document.getElementById("searchBar").value.toUpperCase();
+    if (!input){
+        window.location.reload();
+    }
+    else{
+        var panels = document.getElementById("panels");
+        var classesArray = null;
+        for (var i = 0; i < panels.children.length; i++){
+            classesArray = panels.children[i].className.split(/\s+/);
+            if (classesArray.indexOf("panel") > -1){
+                checkPanel(panels.children[i], input);
+            }
+            else{
+                alert("An error occured when searching in " + toString(panels[i].id));
+            }
+        }
+    }
+}
+
+function checkPanel(panel, searchInput){
+    var found = 0;
+    var classesArray = null;
+    var childItem = null;
+    for (var i = 0; i < panel.children.length; i++){
+        childItem = panel.children[i];
+        classesArray = childItem.className.split(/\s+/);
+        if (classesArray.indexOf("panelContent") > -1){
+            for (var n = 0; n < childItem.children.length; n++){
+                var val = childItem.children[n].innerText.toUpperCase();
+                var innerHTML = childItem.children[n].innerHTML;
+                if (val.indexOf(searchInput) > -1){
+                    /* innerHTML = innerHTML.substring(0,index) + "<span style='background-color: yellow;'>" + innerHTML.substring(index, index + searchInput.length) + "</span>" + innerHTML.substring(index + searchInput.length);
+                    inputText.innerHTML = innerHTML;
+                    found += 1; --> not making desired output
+                    */ 
+                }
+            }
+        }
+        else{
+            alert("An error occured when searching in " + toString(panel[i].parentNode.id));
+        }
+    }
+    if (found == 0){
+        panel.style.display = "none";
+    }
+}
+
 /* //check if an object has a class given the class you are searching for and the element you are checking
 function findClass(innerObject, searchClass){
 
@@ -56,7 +104,7 @@ function findClass(innerObject, searchClass){
 
 
 //hides panel view and associated buttons, shows lists view
-function lists(){
+function listsView(){
 
     //variable definitions
     var panels = document.getElementById("panels");
@@ -77,7 +125,7 @@ function lists(){
 }
 
 //hides lists, shows panels and associated buttons
-function panels(){
+function panelsView(){
 
     //variable definitions
     var panels = document.getElementById("panels");
