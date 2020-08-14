@@ -18,7 +18,7 @@ body{
     background-attachment: fixed;
     width: 100vw;
     height: 65vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url("../images and icons/Crop5Edit.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images and icons/Crop5Edit.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -42,6 +42,7 @@ body{
 }
 
 #searchResults{
+    display: none;
     position: absolute;
     left: 9.5vw;
     padding-top: 40px;

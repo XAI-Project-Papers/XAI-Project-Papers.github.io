@@ -1,25 +1,6 @@
 //functions with TODOs/questions in them: enter, search, executeSearchOn, findAndHideParentPanel, checkForResults, switchToAbstract, switchToReference
 //TODO: implement a system in which it displays both reference and abstract view if both contain a search input
 
-//decides when a search should occur, makes "no results" message appear, reloads window after search for user convenience
-function enter(event){
-}
-
-/* function search(){
-} */
-
-//locates a search input within an element, if nothing is located: (1) item index is returned, (2) true is also returned to indicate nothing was found (nothing was found = true)
-function executeSearchOn(elementVar, searchItem){
-}
-
-//finds and hides a parent panel given the item
-function findAndHideParentPanel(innerObject){
-}
-
-//check if a search has any results (in abstract and/or reference/list view)
-function checkForResults(){
-}
-
 /* 
 Search Algorithm:
 [1] Get user input
@@ -33,7 +14,15 @@ Search Algorithm:
 */
 
 function search(){
+    var userInput = document.getElementById("searchBar").value;
     var input = document.getElementById("searchBar").value.toUpperCase();
+    var searchResults = document.getElementById("searchResults");
+    var panels = document.getElementById("panels");
+    var lists = document.getElementById("lists");
+    searchResults.innerHTML = "Search results for '" + userInput + "' in abstract and/or reference/list view"; //writing search results message
+    searchResults.style.display = "inline";
+    panels.style.marginTop = "190px"; //adding spacing above panels so search message does not overlap
+    lists.style.marginTop = "190px"; //adding spacing above lists so search message does not overlap
     if (!input){
         window.location.reload();
     }
@@ -44,8 +33,9 @@ function search(){
             classesArray = panels.children[i].className.split(/\s+/);
             if (classesArray.indexOf("panel") > -1){
                 checkPanel(panels.children[i], input);
+                checkForResults();
             }
-            else{
+            else {
                 alert("An error occured when searching in " + toString(panels[i].id));
             }
         }
@@ -62,46 +52,39 @@ function checkPanel(panel, searchInput){
         if (classesArray.indexOf("panelContent") > -1){
             for (var n = 0; n < childItem.children.length; n++){
                 var val = childItem.children[n].innerText.toUpperCase();
-                var innerHTML = childItem.children[n].innerHTML;
+                var cInnerHTML = childItem.children[n].innerHTML;
                 if (val.indexOf(searchInput) > -1){
-                    /* innerHTML = innerHTML.substring(0,index) + "<span style='background-color: yellow;'>" + innerHTML.substring(index, index + searchInput.length) + "</span>" + innerHTML.substring(index + searchInput.length);
-                    inputText.innerHTML = innerHTML;
-                    found += 1; --> not making desired output
-                    */ 
+                    childItem.children[n].style.backgroundColor = "yellow";
+                    found += 1;
                 }
+            }
+            if (found == 0){
+                panel.style.display = "none";
             }
         }
         else{
             alert("An error occured when searching in " + toString(panel[i].parentNode.id));
         }
-    }
-    if (found == 0){
-        panel.style.display = "none";
+        break;
     }
 }
 
-/* //check if an object has a class given the class you are searching for and the element you are checking
-function findClass(innerObject, searchClass){
+function checkForResults(){
+    var panels = document.getElementById("panels");
+    var noResults = document.getElementById("noResults");
+    var numberOfActivePanels = 0;
 
-    //variable definition/initialization
-    var object = innerObject;
-    var classesArray = classesArray = object.className.split(/\s+/);//an array of the element/object's classes
-
-    //if the element has the specified class
-    if (classesArray.indexOf(searchClass) > -1) {
-        //return true indicating that the object has the specified class
-        return true;
+    for (var i = 0; i<panels.length; i++){
+        if (panels[i].style.display !== "none"){
+            numberOfActivePanels += 1;
+        }
     }
-    //if the element does not have the specified class
-    else{
-        //return false indicating that the object does not have the specified class
-        return false;
+    if (numberOfActivePanels == 0){
+        noResults.style.display = "inline";
     }
-} */
+}
 
-
-//________________________________________________________________________________________________________
-
+//___________________________________________________________________________________________
 
 //hides panel view and associated buttons, shows lists view
 function listsView(){
