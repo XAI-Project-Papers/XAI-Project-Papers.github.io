@@ -27,7 +27,9 @@ function search(){
     }
     else{
         var panels = document.getElementById("panels");
+        var lists = document.getElementById("ol");
         var classesArray = null;
+        var classesArray2 = null;
         for (var i = 0; i < panels.children.length; i++){
             classesArray = panels.children[i].className.split(/\s+/);
             if (classesArray.indexOf("panel") > -1){
@@ -37,6 +39,23 @@ function search(){
             else {
                 alert("An error occured when searching in " + toString(panels[i].id));
             }
+        }
+        for (var i = 0; i < lists.childElementCount; i++){
+            if (lists.children[i].nodeName == "LI"){
+                checkList(lists.children[i], input);
+            }
+            else {
+                alert("An error occured when searching in lists");
+            }
+        }
+    }
+}
+
+function checkList(listItem, searchInput){
+    for (var n = 0; n < listItem.childElementCount; n++){
+        var val = listItem.children[n].innerText.toUpperCase();
+        if (val.indexOf(searchInput) > -1){
+            listItem.children[n].style.backgroundColor = "yellow";
         }
     }
 }
@@ -51,7 +70,6 @@ function checkPanel(panel, searchInput){
         if (classesArray.indexOf("panelContent") > -1){
             for (var n = 0; n < childItem.children.length; n++){
                 var val = childItem.children[n].innerText.toUpperCase();
-                var cInnerHTML = childItem.children[n].innerHTML;
                 if (val.indexOf(searchInput) > -1){
                     childItem.children[n].style.backgroundColor = "yellow";
                     found += 1;
@@ -77,6 +95,8 @@ function checkPanel(panel, searchInput){
         panel.style.display = "none";
     }
 }
+
+
 
 function checkForResults(){
     var panels = document.getElementById("panels");
