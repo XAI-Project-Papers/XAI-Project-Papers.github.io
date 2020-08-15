@@ -18,10 +18,10 @@ body{
     background-attachment: fixed;
     width: 100vw;
     height: 65vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url("../images and icons/kelley(1).jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images and icons/Crop5Edit.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: top;
+    background-position-y: center;
     color: white;
     margin-bottom: 45px;
 }
@@ -42,6 +42,7 @@ body{
 }
 
 #searchResults{
+    display: none;
     position: absolute;
     left: 9.5vw;
     padding-top: 40px;
@@ -69,14 +70,26 @@ body{
     min-width: 190px;
 }
 
-#refView{
+.refAndAbstractLight{
     background-color: lightgrey;
+    border: 1px solid lightgrey;
+}
+
+#refView{
     display: inline-flex;
     align-items: center;
     padding: 5px;
     position: absolute;
     right: 0;
-    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+
+#abstractView{
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    position: absolute;
+    left: 0;
     border-radius: 10px;
 }
 
@@ -87,15 +100,10 @@ body{
     cursor: pointer;
 }
 
-#abstractView{
-    background-color: lightgrey;
-    display: inline-flex;
-    align-items: center;
-    padding: 5px;
-    position: absolute;
-    left: 0;
-    border: 1px solid lightgrey;
-    border-radius: 10px;
+.refAndAbstractDefault{
+    background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), #DC4405;
+    border: 1px solid #DC4405;
+    color: white;
 }
 
 #panels{
@@ -103,13 +111,14 @@ body{
     margin-top: 110px;
     max-width: 80vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(309px, 1fr));
+    gap: 50px;
 }
 
 .panel{
-    box-shadow: 10px 10px 15px lightgrey;
+    box-shadow: 11px 8px 52px rgba(18,18,18,.35);
     border-top: 20px solid #DC4405;
+    background-color: #4f4f4f;
 }
 
 .panelContent{
@@ -182,6 +191,11 @@ body{
     cursor: pointer;
 }
 
+.panelAndListDefault{
+    background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), lightgrey;
+    color: white;
+}
+
 #panelView{
     background-color: lightgrey;
     display: inline-flex;
@@ -195,7 +209,7 @@ body{
     display: none;
 }
 
-.yearBlock{
+#ol{
     margin-left: 9vh;
     margin-top: 20vh;
     border: 1px solid lightgrey;
@@ -206,12 +220,8 @@ body{
     z-index: 1;
 }
 
-.yearBlock a{
+#ol a{
     color: #3582fc;
-}
-
-.hidden{
-    display: none;
 }
 
 @media (max-width: 700px){
