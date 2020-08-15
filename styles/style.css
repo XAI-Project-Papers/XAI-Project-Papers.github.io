@@ -111,14 +111,14 @@ body{
     margin-top: 110px;
     max-width: 80vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(309px, 1fr));
+    gap: 50px;
 }
 
 .panel{
     box-shadow: 10px 10px 15px lightgrey;
     border-top: 20px solid #DC4405;
-    background-color: #555555;
+    background-color: #4f4f4f;
 }
 
 .panelContent{
