@@ -1,6 +1,5 @@
 //functions with TODOs/questions in them: enter, search, executeSearchOn, findAndHideParentPanel, checkForResults, switchToAbstract, switchToReference
 //TODO: implement a system in which it displays both reference and abstract view if both contain a search input
-
 /* 
 Search Algorithm:
 [1] Get user input
@@ -18,7 +17,7 @@ function search(){
     var input = document.getElementById("searchBar").value.toUpperCase();
     var searchResults = document.getElementById("searchResults");
     var panels = document.getElementById("panels");
-    var lists = document.getElementById("lists");
+    var lists = document.getElementById("ol");
     searchResults.innerHTML = "Search results for '" + userInput + "' in abstract and reference/list view"; //writing search results message
     searchResults.style.display = "inline";
     panels.style.marginTop = "190px"; //adding spacing above panels so search message does not overlap
@@ -93,8 +92,6 @@ function checkForResults(){
         noResults.style.display = "inline";
     }
 }
-
-//___________________________________________________________________________________________
 
 //hides panel view and associated buttons, shows lists view
 function listsView(){
