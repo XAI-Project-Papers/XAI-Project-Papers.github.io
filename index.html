@@ -37,9 +37,12 @@
     <h3 id="searchResults"></h3>
     <h3 id="noResults">No Results Were Found</h3>
 
-    <?php
-    require './templates/panelsAndLists.html';
-    ?>
+    <div id="panels"></div>
+
+    <div id="lists">
+        <ol id="ol"></ol>
+    </div>
+    <script src="./scripts/populatePublications.js"></script>
 
     <script src="./scripts/script.js"></script>
 </body>
