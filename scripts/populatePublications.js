@@ -11,7 +11,7 @@ class publication{
         this.outerPanel = "<div class='panel'>";
         this.panelContent = "<div class='panelContent'>";
         this.pubTitle = "<h2 class='pubTitle'>" + dataArray[0] + "</h2>";
-        this.reference = "<p class='pubDes panDes'>" + dataArray[1] + "</p>";
+        this.reference = "<p class='pubDes panDes'>" + dataArray[1] + "<a class='pubLink' href=" + dataArray[6] + ">" + dataArray[6] + "</a>" + "</p>";
         this.abstract = "<p class='abstract'>" + dataArray[2] + "</p>";
         //divEnd for panelContent here
         this.panelExtras = "<div class='panelExtras'>";
@@ -39,18 +39,24 @@ class publication{
     }
 }
 
+/* 
+Data order: Title, Reference Format, Abstract, Month, Year, PDF link, Additional Link
+Remember to escape characters (e.g. "")
+If a link is unavailable: use "./templates/noLink.html"
+*/
 var Data1 = [
-    "Keeping it \"organized and logical\" after-action review for AI (AAR/AI)",
-    "Theresa Mai, Roli Khanna, Jonathan Dodge, Jed Irvine, Kin-Ho Lam, Zhengxian Lin, Nicholas Kiddle, Evan Newman, Sai Raja, Caleb Matthews, Christopher Perdriau, Margaret Burnett, and Alan Fern. 2020. Keeping It “Organized and Logical”: After-Action Review for AI (AAR/AI). In 25th International Conference on Intelligent User Interfaces (IUI ’20), March 17–20, 2020, Cagliari, Italy. ACM, New York, NY, USA, 12 pages.",
-    "Explainable AI (XAI) is growing in importance as AI pervades modern society, but few have studied how XAI can directly support people trying to assess an AI agent. Without a rigorous process, people may approach assessment in ad hoc ways---leading to the possibility of wide variations in assessment of the same agent due only to variations in their processes. AAR, or After-Action Review, is a method some military organizations use to assess human agents, and it has been validated in many domains. Drawing upon this strategy, we derived an AAR for AI, to organize ways people assess reinforcement learning (RL) agents in a sequential decision-making environment. The results of our qualitative study revealed several strengths and weaknesses of the AAR/AI process and the explanations embedded within it.",
-    "March",
+    "Identifying Reasoning Flaws in Planning-Based RL Using Tree Explanations",
+    "Kin-Ho Lam, Zhengxian Lin, Jed Irvine, Jonathan Dodge, Zeyad T Shureih, Roli Khanna, Minsuk Kahng, and Alan Fern. (submitted). Identifying Reasoning Flaws in Planning-Based RL Using Tree Explanations. IJCAI-PRICAI 2020 Workshop on Explainable Artificial Intelligence.",
+    "Abstract Currently Unavailable. <br>For more information, look at the reference provided here: <br><br> Kin-Ho Lam, Zhengxian Lin, Jed Irvine, Jonathan Dodge, Zeyad T Shureih, Roli Khanna, Minsuk Kahng, and Alan Fern. (submitted). Identifying Reasoning Flaws in Planning-Based RL Using Tree Explanations. IJCAI-PRICAI 2020 Workshop on Explainable Artificial Intelligence.",
+    "August",
     "2020",
-    'https://doi.org/10.1145/33773253377525'
+    "./templates/noLink.html",
+    "./templates/noLink.html"
 ];
 
-var pub1 = new publication(Data1);
+/* var pub1 = new publication(Data1);
 pub1.createPanel();
-pub1.createList();
+pub1.createList(); */
 
 
 var Data2 = [
