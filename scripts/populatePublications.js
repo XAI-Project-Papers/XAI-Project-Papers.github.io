@@ -11,7 +11,7 @@ class publication{
         this.outerPanel = "<div class='panel'>";
         this.panelContent = "<div class='panelContent'>";
         this.pubTitle = "<h2 class='pubTitle'>" + dataArray[0] + "</h2>";
-        this.reference = "<p class='pubDes panDes'>" + dataArray[1] + "<a class='pubLink' href=" + dataArray[6] + ">" + dataArray[6] + "</a>" + "</p>";
+        this.reference = "<p class='pubDes panDes'>" + dataArray[1] + "<br>" + "<a href=" + dataArray[6] + ">" + dataArray[6] + "</a>" + "</p>";
         this.abstract = "<p class='abstract'>" + dataArray[2] + "</p>";
         //divEnd for panelContent here
         this.panelExtras = "<div class='panelExtras'>";
@@ -44,7 +44,7 @@ Data order: Title, Reference Format, Abstract, Month, Year, PDF link, Additional
 Remember to escape characters (e.g. "")
 If a link is unavailable: use "./templates/noLink.html"
 */
-var Data1 = [
+var Data51 = [
     "Identifying Reasoning Flaws in Planning-Based RL Using Tree Explanations",
     "Kin-Ho Lam, Zhengxian Lin, Jed Irvine, Jonathan Dodge, Zeyad T Shureih, Roli Khanna, Minsuk Kahng, and Alan Fern. (submitted). Identifying Reasoning Flaws in Planning-Based RL Using Tree Explanations. IJCAI-PRICAI 2020 Workshop on Explainable Artificial Intelligence.",
     "Abstract Currently Unavailable. <br>For more information, look at the reference provided here: <br><br> Kin-Ho Lam, Zhengxian Lin, Jed Irvine, Jonathan Dodge, Zeyad T Shureih, Roli Khanna, Minsuk Kahng, and Alan Fern. (submitted). Identifying Reasoning Flaws in Planning-Based RL Using Tree Explanations. IJCAI-PRICAI 2020 Workshop on Explainable Artificial Intelligence.",
@@ -54,20 +54,20 @@ var Data1 = [
     "./templates/noLink.html"
 ];
 
-/* var pub1 = new publication(Data1);
-pub1.createPanel();
-pub1.createList(); */
+var pub51 = new publication(Data51);
+pub51.createPanel();
+pub51.createList();
 
-
-var Data2 = [
-    "Explaining Reinforcement Learning to Mere Mortals: An Empirical Study",
-    "Andrew Anderson, Jonathan Dodge, Amrita Sadarangani, Zoe Juozapaitis, Evan Newman, Jed Irvine, Souti Chattopadhyay, Alan Fern, and Margaret Burnett. (2019). Explaining Reinforcement Learning to Mere Mortals: An Empirical Study. International Joint Conference on Artificial Intelligence (IJCAI’19).",
-    "We present a user study to investigate the impact of explanations on non-experts' understanding of reinforcement learning (RL) agents. We investigate both a common RL visualization, saliency maps (the focus of attention), and a more recent explanation type, reward-decomposition bars (predictions of future types of rewards). We designed a 124 participant, four-treatment experiment to compare participants' mental models of an RL agent in a simple Real-Time Strategy (RTS) game. Our results show that the combination of both saliency and reward bars were needed to achieve a statistically significant improvement in mental model score over the control. In addition, our qualitative analysis of the data reveals a number of effects for further study.",
-    "March",
-    "2019",
-    "https://doi.org/10.1145/33773253377525"
+var Data50 = [
+    "Understanding Finite-State Representations of Recurrent Policy Networks",
+    "Zhengxian Lin, Kim-Ho Lam, and Alan Fern. (2020). Understanding Finite-State Representations of Recurrent Policy Networks. ICML 2020 Workshop on XXAI: Extending Explainable AI Beyond Deep Models and Classifiers",
+    "We introduce an approach for understanding finite-state machine (FSM) representations of recurrent policy networks. Recent work focused on minimizing FSMs to gain high-level insight, however, minimization can obscure a deeper understanding by merging states that are semantically distinct. Conversely, our approach starts with an unminimized machine and applies more-interpretable reductions that preserve the key decision points of the policy. We also contribute a saliency tool to attain a deeper understanding of the role of observations in the decisions. Our case studies on policies from 7 Atari games and 3 control benchmarks demonstrate that the approach can reveal insights that have not been noticed in prior work.",
+    "July",
+    "2020",
+    "https://arxiv.org/pdf/2006.03745.pdf",
+    "https://arxiv.org/abs/2006.03745"
 ];
 
-var pub2 = new publication(Data2);
-pub2.createPanel();
-pub2.createList();
+var pub50 = new publication(Data50);
+pub50.createPanel();
+pub50.createList();
