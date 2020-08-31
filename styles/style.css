@@ -119,6 +119,7 @@ body{
     box-shadow: 11px 8px 52px rgba(18,18,18,.35);
     border-top: 20px solid #DC4405;
     background-color: #4f4f4f;
+    align-self: baseline;
 }
 
 .panelContent{
