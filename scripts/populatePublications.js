@@ -78,8 +78,8 @@ var Data49 = [
     "and Understanding Finite-State Representations of Recurrent Policy Networks",
     "Mohamad Danesh, Anurag Koul, Alan Fern. (2020). and Understanding Finite-State Representations of Recurrent Policy Networks. ICML 2020 Workshop on XXAI: Extending Explainable AI Beyond Deep Models and Classifiers",
     "No Abstract",
-    "NA",
-    "NA",
+    " ",
+    " ",
     "./templates/noLink.html",
     "./templates/noLink.html"
 ];
@@ -98,7 +98,7 @@ var Data48 = [
     "https://dl.acm.org/doi/10.1145/3396047"
 ];
 
-var pub48 = newpublication(Data48);
+var pub48 = new publication(Data48);
 pub48.createPanel();
 pub48.createList();
 
@@ -112,7 +112,7 @@ var Data47 = [
     "https://iui.acm.org/2020/keynotes.html"
 ];
 
-var pub47 = newpublication(Data47);
+var pub47 = new publication(Data47);
 pub47.createPanel();
 pub47.createList();
 
@@ -120,13 +120,13 @@ var Data46 = [
     "Position: We Can Measure XAI Explanations Better with &quot;Templates&quot;",
     "Jonathan Dodge and Margaret Burnett. (2020). Position: We Can Measure XAI Explanations Better with &quot;Templates&quot;. IUI ExSS-ATEC Workshop.",
     "No Abstract",
-    "NA",
-    "NA",
+    " ",
+    " ",
     "./templates/noLink.html",
     "./templates/noLink.html"
 ];
 
-var pub46 = newpublication(Data46);
+var pub46 = new publication(Data46);
 pub46.createPanel();
 pub46.createList();
 
@@ -140,7 +140,7 @@ var Data45 = [
     "https://dl.acm.org/doi/10.1145/3366485"
 ];
 
-var pub45 = newpublication(Data45);
+var pub45 = new publication(Data45);
 pub45.createPanel();
 pub45.createList();
 
@@ -154,7 +154,7 @@ var Data44 = [
     "https://dl.acm.org/doi/abs/10.1145/3377325.3377525"
 ];
 
-var pub44 = newpublication(Data45);
+var pub44 = new publication(Data45);
 pub44.createPanel();
 pub44.createList();
 
@@ -169,7 +169,7 @@ var Data43 = [
     "https://aaai.org/ojs/index.php/AAAI/article/view/6806"
 ];
 
-var pub43 = newpublication(Data43);
+var pub43 = new publication(Data43);
 pub43.createPanel();
 pub43.createList();
 
@@ -183,7 +183,7 @@ var Data42 = [
     "https://aaai.org/ojs/index.php/AAAI/article/view/6863"
 ];
 
-var pub42 = newpublication(Data42);
+var pub42 = new publication(Data42);
 pub42.createPanel();
 pub42.createList();
 
@@ -197,7 +197,7 @@ var Data41 = [
     "https://www.researchgate.net/publication/338634713_Explanations_for_Dynamic_Programming"
 ];
 
-var pub41 = newpublication(Data41);
+var pub41 = new publication(Data41);
 pub41.createPanel();
 pub41.createList();
 
@@ -212,7 +212,7 @@ var Data40 = [
     "https://www.researchgate.net/publication/338512774_PointConv_Deep_Convolutional_Networks_on_3D_Point_Clouds"
 ];
 
-var pub40 = newpublication(Data40);
+var pub40 = new publication(Data40);
 pub40.createPanel();
 pub40.createList();
 
@@ -227,7 +227,7 @@ var Data39 = [
     "https://arxiv.org/abs/1901.11058"
 ];
 
-var pub39 = newpublication(Data39);
+var pub39 = new publication(Data39);
 pub39.createPanel();
 pub39.createList();
 
@@ -242,7 +242,7 @@ var Data38 = [
     "https://ieeexplore.ieee.org/document/8778723"
 ];
 
-var pub38 = newpublication(Data38);
+var pub38 = new publication(Data38);
 pub38.createPanel();
 pub38.createList();
 
@@ -256,7 +256,7 @@ var Data37 = [
     "https://arxiv.org/abs/1902.08649"
 ];
 
-var pub37 = newpublication(Data37);
+var pub37 = new publication(Data37);
 pub37.createPanel();
 pub37.createList();
 
@@ -270,7 +270,7 @@ var Data36 = [
     "https://arxiv.org/abs/1909.12969"
 ];
 
-var pub36 = newpublication(Data36);
+var pub36 = new publication(Data36);
 pub36.createPanel();
 pub36.createList();
 
@@ -278,13 +278,13 @@ var Data35 = [
     "Explainable Reinforcement Learning via Reward Decomposition.",
     "Zoe Juozapaitis, Anurag Koul, Alan Fern, Martin Erwig and Finale Doshi-Velez. (2019). Explainable Reinforcement Learning via Reward Decomposition. IJCAI-2019 Workshop on XAI.",
     "We study reward decomposition for explaining the decisions of reinforcement learning (RL) agents. The approach decomposes rewards into sums of semantically meaningful reward types, so that actions can be compared in terms of trade-offs among the types. In particular, we introduce the concept of minimum sufficient explanations for compactly explaining why one action is preferred over another in terms of the types. Many prior RL algorithms for decomposed rewards produced inconsistent decomposed values, which can be ill-suited to explanation. We exploit an off-policy variant of Qlearning that provably converges to an optimal policy and the correct decomposed action values. We illustrate the approach in a number of domains, showing its utility for explanations.",
-    "NA",
+    " ",
     "2019",
     "https://web.engr.oregonstate.edu/~erwig/papers/ExplainableRL_XAI19.pdf",
     "https://www.semanticscholar.org/paper/Explainable-Reinforcement-Learning-via-Reward-Juozapaitis-Koul/d47677337b1083d6bfa940748da0780b2c9faf7d"
 ];
 
-var pub35 = newpublication(Data35);
+var pub35 = new publication(Data35);
 pub35.createPanel();
 pub35.createList();
 
@@ -298,7 +298,7 @@ var Data34 = [
     "https://arxiv.org/abs/1903.09708"
 ];
 
-var pub34 = newpublication(Data34);
+var pub34 = new publication(Data34);
 pub34.createPanel();
 pub34.createList();
 
@@ -313,7 +313,7 @@ var Data33 = [
     "https://arxiv.org/abs/1904.01032"
 ];
 
-var pub33 = newpublication(Data33);
+var pub33 = new publication(Data33);
 pub33.createPanel();
 pub33.createList();
 
@@ -327,7 +327,7 @@ var Data32 = [
     "https://arxiv.org/abs/1812.07150"
 ];
 
-var pub32 = newpublication(Data32);
+var pub32 = new publication(Data32);
 pub32.createPanel();
 pub32.createList();
 
@@ -341,7 +341,7 @@ var Data31 = [
     "https://www.aaai.org/ojs/index.php/AAAI/article/view/5140"
 ];
 
-var pub31 = newpublication(Data31);
+var pub31 = new publication(Data31);
 pub31.createPanel();
 pub31.createList();
 
@@ -355,7 +355,7 @@ var Data30 = [
     "https://dl.acm.org/doi/10.1145/3301275.3302310"
 ];
 
-var pub30 = newpublication(Data30);
+var pub30 = new publication(Data30);
 pub30.createPanel();
 pub30.createList();
 
@@ -363,13 +363,13 @@ var Data29 = [
     "Learning Finite State Representations of Recurrent Policy Networks.",
     "Anurag Koul, Sam Greydanus, and Alan Fern. (2019). Learning Finite State Representations of Recurrent Policy Networks. International Conference on Learning Representations (ICLR).",
     "Recurrent neural networks (RNNs) are an effective representation of control policies for a wide range of reinforcement and imitation learning problems. RNN policies, however, are particularly difficult to explain, understand, and analyze due to their use of continuous-valued memory vectors and observation features. In this paper, we introduce a new technique, Quantized Bottleneck Insertion, to learn finite representations of these vectors and features. The result is a quantized representation of the RNN that can be analyzed to improve our understanding of memory use and general behavior. We present results of this approach on synthetic environments and six Atari games. The resulting finite representations are surprisingly small in some cases, using as few as 3 discrete memory states and 10 observations for a perfect Pong policy. We also show that these finite policy representations lead to improved interpretability. ",
-    "NA",
+    " ",
     "2019",
     "https://openreview.net/pdf?id=S1gOpsCctm",
     "https://dl.acm.org/doi/10.1145/3301275.3302310"
 ];
 
-var pub29 = newpublication(Data29);
+var pub29 = new publication(Data29);
 pub29.createPanel();
 pub29.createList();
 
@@ -384,7 +384,7 @@ var Data28 = [
     "https://www.aclweb.org/anthology/W18-6443/"
 ];
 
-var pub28 = newpublication(Data28);
+var pub28 = new publication(Data28);
 pub28.createPanel();
 pub28.createList();
 
@@ -399,7 +399,7 @@ var Data27 = [
     "https://www.aclweb.org/anthology/P18-2076/"
 ];
 
-var pub27 = newpublication(Data27);
+var pub27 = new publication(Data27);
 pub27.createPanel();
 pub27.createList();
 
@@ -413,7 +413,7 @@ var Data26 = [
     "http://dx.doi.org/10.18653/v1/D18-1537"
 ];
 
-var pub26 = newpublication(Data26);
+var pub26 = new publication(Data26);
 pub26.createPanel();
 pub26.createList();
 
@@ -428,7 +428,7 @@ var Data25 = [
     "https://www.aclweb.org/anthology/D18-1342"
 ];
 
-var pub25 = newpublication(Data25);
+var pub25 = new publication(Data25);
 pub25.createPanel();
 pub25.createList();
 
@@ -443,7 +443,7 @@ var Data24 = [
     "https://www.aclweb.org/anthology/D18-1357"
 ];
 
-var pub24 = newpublication(Data24);
+var pub24 = new publication(Data24);
 pub24.createPanel();
 pub24.createList();
 
@@ -451,13 +451,13 @@ var Data23 = [
     "Toward Learning Finite State Representations of Recurrent Policy Networks.",
     "Anurag Koul, Sam Greydanus, and Alan Fern. (2018). Toward Learning Finite State Representations of Recurrent Policy Networks. IJCAI Workshop on Explainable Artificial Intelligence.",
     "Recurrent neural networks (RNNs) are an effective representation of control policies for a wide range of reinforcement learning problems. RNN policies, however, are particularly difficult to explain and understand due to their use of continuous-valued internal memory. In this paper, we study an approach for bringing us closer to understanding these policies based on learning accurate finite-state representations of the continuous-valued memory. In particular, we learn policies represented as Moore Machine Networks (MMNs), where the memory is composed of binary variables that ideally provide a more interpretable view of how the memory is used. We describe a learning approach based on training Binary Bottleneck Networks (BBNs) to encode the continuous RNN state and then inserting the BBN directly in the RNN, which then serves as a compact binary form of memory. We present preliminary empirical results on several types of synthetic learning environments, which shows the potential for this approach to learn MMNs and provide insight into the memory usage of RNN policies.",
-    "NA",
+    " ",
     "2018",
     "https://www.researchgate.net/profile/Jose_Alonso3/publication/325870079_Hybrid_Data-Expert_Explainable_Beer_Style_Classifier/links/5b976bb7299bf147394865d2/Hybrid-Data-Expert-Explainable-Beer-Style-Classifier.pdf#page=78",
     "./templates/noLink.html"
 ];
 
-var pub23 = newpublication(Data23);
+var pub23 = new publication(Data23);
 pub23.createPanel();
 pub23.createList();
 
@@ -471,7 +471,7 @@ var Data22 = [
     "https://par.nsf.gov/biblio/10096985"
 ];
 
-var pub22 = newpublication(Data22);
+var pub22 = new publication(Data22);
 pub22.createPanel();
 pub22.createList();
 
@@ -486,7 +486,7 @@ var Data21 = [
     "https://openaccess.thecvf.com/content_ECCV_2018/html/Lawrence_Neal_Open_Set_Learning_ECCV_2018_paper.html"
 ];
 
-var pub21 = newpublication(Data21);
+var pub21 = new publication(Data21);
 pub21.createPanel();
 pub21.createList();
 
@@ -500,7 +500,7 @@ var Data20 = [
     "https://dl.acm.org/doi/abs/10.1145/3230666"
 ];
 
-var pub20 = newpublication(Data20);
+var pub20 = new publication(Data20);
 pub20.createPanel();
 pub20.createList();
 
@@ -514,7 +514,7 @@ var Data19 = [
     "http://proceedings.mlr.press/v80/greydanus18a.html"
 ];
 
-var pub19 = newpublication(Data19);
+var pub19 = new publication(Data19);
 pub19.createPanel();
 pub19.createList();
 
@@ -528,7 +528,7 @@ var Data18 = [
     "https://www.semanticscholar.org/paper/What-Should-Be-in-an-XAI-Explanation-What-IFT-Dodge-Penney/a8aa9f82c90c4aeabe721d8161cbf8ecdf6b97ee"
 ];
 
-var pub18 = newpublication(Data18);
+var pub18 = new publication(Data18);
 pub18.createPanel();
 pub18.createList();
 
@@ -542,7 +542,7 @@ var Data17 = [
     "https://arxiv.org/abs/1709.05360"
 ];
 
-var pub17 = newpublication(Data17);
+var pub17 = new publication(Data17);
 pub17.createPanel();
 pub17.createList();
 
@@ -557,7 +557,7 @@ var Data16 = [
     "https://link.springer.com/chapter/10.1007/978-3-319-60291-2_10"
 ];
 
-var pub16 = newpublication(Data16);
+var pub16 = new publication(Data16);
 pub16.createPanel();
 pub16.createList();
 
@@ -572,7 +572,7 @@ var Data15 = [
     "http://proceedings.mlr.press/v77/ma17a.html"
 ];
 
-var pub15 = newpublication(Data15);
+var pub15 = new publication(Data15);
 pub15.createPanel();
 pub15.createList();
 
@@ -586,7 +586,7 @@ var Data14 = [
     "https://dl.acm.org/doi/pdf/10.1145/3173574.3174136"
 ];
 
-var pub14 = newpublication(Data14);
+var pub14 = new publication(Data14);
 pub14.createPanel();
 pub14.createList();
 
@@ -600,7 +600,7 @@ var Data13 = [
     "https://dl.acm.org/doi/10.1145/3172944.3172946"
 ];
 
-var pub13 = newpublication(Data13);
+var pub13 = new publication(Data13);
 pub13.createPanel();
 pub13.createList();
 
@@ -614,7 +614,7 @@ var Data12 = [
     "https://www.semanticscholar.org/paper/Learning-Explainable-Embeddings-for-Deep-Networks-Qi-Li/d9c08a77a72a18e131c80fddefcb04282bea8d4e"
 ];
 
-var pub12 = newpublication(Data12);
+var pub12 = new publication(Data12);
 pub12.createPanel();
 pub12.createList();
 
@@ -628,7 +628,7 @@ var Data11 = [
     "https://arxiv.org/abs/1711.00138"
 ];
 
-var pub11 = newpublication(Data11);
+var pub11 = new publication(Data11);
 pub11.createPanel();
 pub11.createList();
 
@@ -637,13 +637,13 @@ var Data10 = [
     "Adaptive Submodularity with Varying Query Sets: An Application to Active Multi-label Learning",
     "Mandana Hamidi-Haines, Robby Goetschalckx, Prasad Tadepalli, and Alan Fern. (2017). Adaptive Submodularity with Varying Query Sets: An Application to Active Multi-label Learning. International Conference on Algorithmic Learning Theory.",
     "Adaptive submodular optimization, where a sequence of items is selected adaptively to optimize a submodular function, has been found to have many applications from sensor placement to active learning. In the current paper, we extend this work to the setting of multiple queries at each time step, where the set of available queries is randomly constrained. A primary contribution of this paper is to prove the first near optimal approximation bound for a greedy policy in this setting. A natural application of this framework is to crowd-sourced active learning problem where the set of available experts and examples might vary randomly. We instantiate the new framework for multi-label learning and evaluate it in multiple benchmark domains with promising results.",
-    "NA",
+    " ",
     "2017",
     "http://proceedings.mlr.press/v76/fern17a/fern17a.pdf",
     "http://proceedings.mlr.press/v76/fern17a.html"
 ];
 
-var pub10 = newpublication(Data10);
+var pub10 = new publication(Data10);
 pub10.createPanel();
 pub10.createList();
 
@@ -658,7 +658,7 @@ var Data9 = [
     "https://www.aclweb.org/anthology/W17-4751"
 ];
 
-var pub9 = newpublication(Data9);
+var pub9 = new publication(Data9);
 pub9.createPanel();
 pub9.createList();
 
@@ -673,7 +673,7 @@ var Data8 = [
     "http://www.cs.cornell.edu/~tianze/publications/17-emnlp-transition-dp-parsing"
 ];
 
-var pub8 = newpublication(Data8);
+var pub8 = new publication(Data8);
 pub8.createPanel();
 pub8.createList();
 
@@ -688,7 +688,7 @@ var Data7 = [
     "https://www.aclweb.org/anthology/D17-1225/"
 ];
 
-var pub7 = newpublication(Data7);
+var pub7 = new publication(Data7);
 pub7.createPanel();
 pub7.createList();
 
@@ -702,7 +702,7 @@ var Data6 = [
     "https://arxiv.org/abs/1709.10191"
 ];
 
-var pub6 = newpublication(Data6);
+var pub6 = new publication(Data6);
 pub6.createPanel();
 pub6.createList();
 
@@ -716,7 +716,7 @@ var Data5 = [
     "https://www.aclweb.org/anthology/P17-2053/"
 ];
 
-var pub5 = newpublication(Data5);
+var pub5 = new publication(Data5);
 pub5.createPanel();
 pub5.createList();
 
@@ -730,7 +730,7 @@ var Data4 = [
     "https://ieeexplore.ieee.org/document/8103444/"
 ];
 
-var pub4 = newpublication(Data4);
+var pub4 = new publication(Data4);
 pub4.createPanel();
 pub4.createList();
 
@@ -744,7 +744,7 @@ var Data3 = [
     "https://ieeexplore.ieee.org/document/8099707"
 ];
 
-var pub3 = newpublication(Data3);
+var pub3 = new publication(Data3);
 pub3.createPanel();
 pub3.createList();
 
@@ -758,7 +758,7 @@ var Data2 = [
     "https://www.aclweb.org/anthology/D17-1227"
 ];
 
-var pub2 = newpublication(Data2);
+var pub2 = new publication(Data2);
 pub2.createPanel();
 pub2.createList();
 
@@ -766,12 +766,12 @@ var Data1 = [
     "Active Multi-Label Learning with Varying Query Sets.",
     "Mandana Hamidi-Haines, Robby Goetshalchx, Prasad Tadepalli, and Alan Fern. (2017). Active Multi-Label Learning with Varying Query Sets. Picky Learners Workshop at the International Conference on Machine Learning.",
     "We introduce the problem of active multi-label learning where the queries are restricted to come from randomly varying subsets. This setting captures crowd sourcing scenarios where there are multiple experts with different types of expertise, and not all experts are available at all times. We generalize the framework of adaptive submodularity and prove the first near optimal approximation bound for a greedy policy for this setting. We instantiate this framework for multi-label learning and evaluate it in multiple benchmark domains with promising results.",
-    "NA",
+    " ",
     "2017",
     "./templates/noLink.html",
     "https://www.semanticscholar.org/paper/Active-Multi-Label-Learning-with-Varying-Query-Sets-Hamidi-Haines-Goetschalckx/b10e8c9216d90d6a967813d0454f176021e8ec0a"
 ];
 
-var pub1 = newpublication(Data1);
+var pub1 = new publication(Data1);
 pub1.createPanel();
 pub1.createList();
