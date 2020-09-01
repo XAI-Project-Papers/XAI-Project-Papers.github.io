@@ -80,8 +80,8 @@ var Data49 = [
     "No Abstract",
     "NA",
     "NA",
-    "NA",
-    "NA"
+    "./templates/noLink.html",
+    "./templates/noLink.html"
 ];
 
 /* var pub49 = new publication(Data49);
@@ -96,7 +96,7 @@ var Data48 = [
     "2020",
     "./templates/noLink.html",
     "https://dl.acm.org/doi/10.1145/3396047"
-]
+];
 
 var pub48 = newpublication(Data48);
 pub48.createPanel();
@@ -110,7 +110,7 @@ var Data47 = [
     "2020",
     "./templates/noLink.html",
     "https://iui.acm.org/2020/keynotes.html"
-]
+];
 
 var pub47 = newpublication(Data47);
 pub47.createPanel();
@@ -122,9 +122,9 @@ var Data46 = [
     "No Abstract",
     "NA",
     "NA",
-    "NA",
-    "NA"
-]
+    "./templates/noLink.html",
+    "./templates/noLink.html"
+];
 
 var pub46 = newpublication(Data46);
 pub46.createPanel();
@@ -138,7 +138,7 @@ var Data45 = [
     "2020",
     "ftp://ftp.cs.orst.edu/pub/burnett/TiiS-mentalModelsMereMortals-2020-asPrinted.pdf",
     "https://dl.acm.org/doi/10.1145/3366485"
-]
+];
 
 var pub45 = newpublication(Data45);
 pub45.createPanel();
@@ -152,7 +152,7 @@ var Data44 = [
     "2020",
     "ftp://ftp.cs.orst.edu/pub/burnett/iui20-AARAI.pdf",
     "https://dl.acm.org/doi/abs/10.1145/3377325.3377525"
-]
+];
 
 var pub44 = newpublication(Data45);
 pub44.createPanel();
@@ -167,7 +167,7 @@ var Data43 = [
     "2020",
     "https://aaai.org/ojs/index.php/AAAI/article/view/6806/6660",
     "https://aaai.org/ojs/index.php/AAAI/article/view/6806"
-]
+];
 
 var pub43 = newpublication(Data43);
 pub43.createPanel();
@@ -181,7 +181,7 @@ var Data42 = [
     "2020",
     "https://aaai.org/ojs/index.php/AAAI/article/view/6863/6717",
     "https://aaai.org/ojs/index.php/AAAI/article/view/6863"
-]
+];
 
 var pub42 = newpublication(Data42);
 pub42.createPanel();
@@ -195,7 +195,7 @@ var Data41 = [
     "2020",
     "https://web.engr.oregonstate.edu/~erwig/papers/ExplanationsForDP_PADL20.pdf",
     "https://www.researchgate.net/publication/338634713_Explanations_for_Dynamic_Programming"
-]
+];
 
 var pub41 = newpublication(Data41);
 pub41.createPanel();
@@ -210,7 +210,7 @@ var Data40 = [
     "2020",
     "https://openaccess.thecvf.com/content_CVPR_2019/papers/Wu_PointConv_Deep_Convolutional_Networks_on_3D_Point_Clouds_CVPR_2019_paper.pdf",
     "https://www.researchgate.net/publication/338512774_PointConv_Deep_Convolutional_Networks_on_3D_Point_Clouds"
-]
+];
 
 var pub40 = newpublication(Data40);
 pub40.createPanel();
@@ -225,7 +225,7 @@ var Data39 = [
     "2019",
     "https://arxiv.org/pdf/1901.11058.pdf",
     "https://arxiv.org/abs/1901.11058"
-]
+];
 
 var pub39 = newpublication(Data39);
 pub39.createPanel();
@@ -240,7 +240,7 @@ var Data38 = [
     "2019",
     "./templates/noLink.html",
     "https://ieeexplore.ieee.org/document/8778723"
-]
+];
 
 var pub38 = newpublication(Data38);
 pub38.createPanel();
@@ -254,7 +254,7 @@ var Data37 = [
     "2019",
     "https://www.aclweb.org/anthology/N19-1404.pdf",
     "https://arxiv.org/abs/1902.08649"
-]
+];
 
 var pub37 = newpublication(Data37);
 pub37.createPanel();
@@ -268,7 +268,7 @@ var Data36 = [
     "2019",
     "https://web.engr.oregonstate.edu/~olsomatt/Counterfactual_States_for_Atari_Agents_via_Generative_Deep_Learning.pdf",
     "https://arxiv.org/abs/1909.12969"
-]
+];
 
 var pub36 = newpublication(Data36);
 pub36.createPanel();
@@ -282,7 +282,7 @@ var Data35 = [
     "2019",
     "https://web.engr.oregonstate.edu/~erwig/papers/ExplainableRL_XAI19.pdf",
     "https://www.semanticscholar.org/paper/Explainable-Reinforcement-Learning-via-Reward-Juozapaitis-Koul/d47677337b1083d6bfa940748da0780b2c9faf7d"
-]
+];
 
 var pub35 = newpublication(Data35);
 pub35.createPanel();
@@ -296,7 +296,7 @@ var Data34 = [
     "2019",
     "https://www.ijcai.org/Proceedings/2019/0184.pdf",
     "https://arxiv.org/abs/1903.09708"
-]
+];
 
 var pub34 = newpublication(Data34);
 pub34.createPanel();
@@ -311,7 +311,7 @@ var Data33 = [
     "2019",
     "https://par.nsf.gov/servlets/purl/10099245",
     "https://arxiv.org/abs/1904.01032"
-]
+];
 
 var pub33 = newpublication(Data33);
 pub33.createPanel();
@@ -325,7 +325,7 @@ var Data32 = [
     "2019",
     "http://ceur-ws.org/Vol-2327/IUI19WS-ExSS2019-14.pdf",
     "https://arxiv.org/abs/1812.07150"
-]
+];
 
 var pub32 = newpublication(Data32);
 pub32.createPanel();
@@ -339,7 +339,7 @@ var Data31 = [
     "2019",
     "https://www.aaai.org/ojs/index.php/AAAI/article/view/5140/5013",
     "https://www.aaai.org/ojs/index.php/AAAI/article/view/5140"
-]
+];
 
 var pub31 = newpublication(Data31);
 pub31.createPanel();
@@ -353,7 +353,7 @@ var Data30 = [
     "2019",
     "https://arxiv.org/pdf/1901.07694.pdf",
     "https://dl.acm.org/doi/10.1145/3301275.3302310"
-]
+];
 
 var pub30 = newpublication(Data30);
 pub30.createPanel();
@@ -367,7 +367,7 @@ var Data29 = [
     "2019",
     "https://openreview.net/pdf?id=S1gOpsCctm",
     "https://dl.acm.org/doi/10.1145/3301275.3302310"
-]
+];
 
 var pub29 = newpublication(Data29);
 pub29.createPanel();
@@ -382,7 +382,7 @@ var Data28 = [
     "2018",
     "https://www.aclweb.org/anthology/W18-6443.pdf",
     "https://www.aclweb.org/anthology/W18-6443/"
-]
+];
 
 var pub28 = newpublication(Data28);
 pub28.createPanel();
@@ -397,7 +397,7 @@ var Data27 = [
     "2018",
     "https://www.aclweb.org/anthology/P18-2076.pdf",
     "https://www.aclweb.org/anthology/P18-2076/"
-]
+];
 
 var pub27 = newpublication(Data27);
 pub27.createPanel();
@@ -411,7 +411,7 @@ var Data26 = [
     "2018",
     "https://www.aclweb.org/anthology/D18-1537.pdf",
     "http://dx.doi.org/10.18653/v1/D18-1537"
-]
+];
 
 var pub26 = newpublication(Data26);
 pub26.createPanel();
@@ -426,7 +426,7 @@ var Data25 = [
     "2018",
     "https://www.aclweb.org/anthology/D18-1342.pdf",
     "https://www.aclweb.org/anthology/D18-1342"
-]
+];
 
 var pub25 = newpublication(Data25);
 pub25.createPanel();
@@ -441,7 +441,7 @@ var Data24 = [
     "2018",
     "https://www.aclweb.org/anthology/D18-1357.pdf",
     "https://www.aclweb.org/anthology/D18-1357"
-]
+];
 
 var pub24 = newpublication(Data24);
 pub24.createPanel();
@@ -454,8 +454,8 @@ var Data23 = [
     "NA",
     "2018",
     "https://www.researchgate.net/profile/Jose_Alonso3/publication/325870079_Hybrid_Data-Expert_Explainable_Beer_Style_Classifier/links/5b976bb7299bf147394865d2/Hybrid-Data-Expert-Explainable-Beer-Style-Classifier.pdf#page=78",
-    "NA"
-]
+    "./templates/noLink.html"
+];
 
 var pub23 = newpublication(Data23);
 pub23.createPanel();
@@ -469,7 +469,7 @@ var Data22 = [
     "2018",
     "https://par.nsf.gov/servlets/purl/10096985",
     "https://par.nsf.gov/biblio/10096985"
-]
+];
 
 var pub22 = newpublication(Data22);
 pub22.createPanel();
@@ -484,7 +484,7 @@ var Data21 = [
     "2018",
     "http://web.engr.oregonstate.edu/~olsomatt/open_set_counterfactual.pdf",
     "https://openaccess.thecvf.com/content_ECCV_2018/html/Lawrence_Neal_Open_Set_Learning_ECCV_2018_paper.html"
-]
+];
 
 var pub21 = newpublication(Data21);
 pub21.createPanel();
@@ -498,7 +498,7 @@ var Data20 = [
     "2019",
     "https://dl.acm.org/doi/pdf/10.1145/3230666",
     "https://dl.acm.org/doi/abs/10.1145/3230666"
-]
+];
 
 var pub20 = newpublication(Data20);
 pub20.createPanel();
@@ -512,7 +512,7 @@ var Data19 = [
     "2017",
     "http://proceedings.mlr.press/v80/greydanus18a/greydanus18a.pdf",
     "http://proceedings.mlr.press/v80/greydanus18a.html"
-]
+];
 
 var pub19 = newpublication(Data19);
 pub19.createPanel();
@@ -526,7 +526,7 @@ var Data18 = [
     "2018",
     "http://ceur-ws.org/Vol-2068/exss9.pdf",
     "https://www.semanticscholar.org/paper/What-Should-Be-in-an-XAI-Explanation-What-IFT-Dodge-Penney/a8aa9f82c90c4aeabe721d8161cbf8ecdf6b97ee"
-]
+];
 
 var pub18 = newpublication(Data18);
 pub18.createPanel();
@@ -540,7 +540,7 @@ var Data17 = [
     "2018",
     "http://people.oregonstate.edu/~khorrams/files/Embedding%20Deep%20Networks%20into%20Visual%20Explanations.pdf",
     "https://arxiv.org/abs/1709.05360"
-]
+];
 
 var pub17 = newpublication(Data17);
 pub17.createPanel();
@@ -555,7 +555,7 @@ var Data16 = [
     "2017",
     "https://alannaholeson.com/papers/EUDbook2-2ndEd-theory+EUSE-distrib.pdf",
     "https://link.springer.com/chapter/10.1007/978-3-319-60291-2_10"
-]
+];
 
 var pub16 = newpublication(Data16);
 pub16.createPanel();
@@ -570,7 +570,7 @@ var Data15 = [
     "2017",
     "http://people.oregonstate.edu/~machao/homepage/acml17-mtsp/ma17.pdf",
     "http://proceedings.mlr.press/v77/ma17a.html"
-]
+];
 
 var pub15 = newpublication(Data15);
 pub15.createPanel();
@@ -584,7 +584,7 @@ var Data14 = [
     "2018",
     "https://dl.acm.org/doi/abs/10.1145/3173574.3174136",
     "https://dl.acm.org/doi/pdf/10.1145/3173574.3174136"
-]
+];
 
 var pub14 = newpublication(Data14);
 pub14.createPanel();
@@ -598,7 +598,7 @@ var Data13 = [
     "2018",
     "https://dl.acm.org/doi/pdf/10.1145/3172944.3172946",
     "https://dl.acm.org/doi/10.1145/3172944.3172946"
-]
+];
 
 var pub13 = newpublication(Data13);
 pub13.createPanel();
@@ -612,7 +612,7 @@ var Data12 = [
     "2017",
     "http://www.interpretable-ml.org/nips2017workshop/papers/04.pdf",
     "https://www.semanticscholar.org/paper/Learning-Explainable-Embeddings-for-Deep-Networks-Qi-Li/d9c08a77a72a18e131c80fddefcb04282bea8d4e"
-]
+];
 
 var pub12 = newpublication(Data12);
 pub12.createPanel();
@@ -626,7 +626,7 @@ var Data11 = [
     "2017",
     "http://proceedings.mlr.press/v80/greydanus18a/greydanus18a.pdf",
     "https://arxiv.org/abs/1711.00138"
-]
+];
 
 var pub11 = newpublication(Data11);
 pub11.createPanel();
@@ -641,7 +641,7 @@ var Data10 = [
     "2017",
     "http://proceedings.mlr.press/v76/fern17a/fern17a.pdf",
     "http://proceedings.mlr.press/v76/fern17a.html"
-]
+];
 
 var pub10 = newpublication(Data10);
 pub10.createPanel();
@@ -656,7 +656,7 @@ var Data9 = [
     "2017",
     "https://www.aclweb.org/anthology/W17-4751.pdf",
     "https://www.aclweb.org/anthology/W17-4751"
-]
+];
 
 var pub9 = newpublication(Data9);
 pub9.createPanel();
@@ -671,7 +671,7 @@ var Data8 = [
     "2017",
     "https://www.cs.cornell.edu/home/llee/papers/exact_decoding.pdf",
     "http://www.cs.cornell.edu/~tianze/publications/17-emnlp-transition-dp-parsing"
-]
+];
 
 var pub8 = newpublication(Data8);
 pub8.createPanel();
@@ -686,7 +686,7 @@ var Data7 = [
     "2017",
     "https://www.aclweb.org/anthology/D17-1225.pdf",
     "https://www.aclweb.org/anthology/D17-1225/"
-]
+];
 
 var pub7 = newpublication(Data7);
 pub7.createPanel();
@@ -700,7 +700,7 @@ var Data6 = [
     "2017",
     "https://www.isca-speech.org/archive/Interspeech_2017/pdfs/1321.PDF",
     "https://arxiv.org/abs/1709.10191"
-]
+];
 
 var pub6 = newpublication(Data6);
 pub6.createPanel();
@@ -714,7 +714,7 @@ var Data5 = [
     "2017",
     "https://www.aclweb.org/anthology/P17-2053.pdf",
     "https://www.aclweb.org/anthology/P17-2053/"
-]
+];
 
 var pub5 = newpublication(Data5);
 pub5.createPanel();
@@ -728,7 +728,7 @@ var Data4 = [
     "2017",
     "http://web.eecs.utk.edu/~azh/pubs/Piorkowski2017VLHCC_MobileForaging.pdf",
     "https://ieeexplore.ieee.org/document/8103444/"
-]
+];
 
 var pub4 = newpublication(Data4);
 pub4.createPanel();
@@ -742,7 +742,7 @@ var Data3 = [
     "2017",
     "http://web.engr.oregonstate.edu/~sinisa/research/publications/cvpr17_budget.pdf",
     "https://ieeexplore.ieee.org/document/8099707"
-]
+];
 
 var pub3 = newpublication(Data3);
 pub3.createPanel();
@@ -756,7 +756,7 @@ var Data2 = [
     "2017",
     "https://www.aclweb.org/anthology/D17-1227.pdf",
     "https://www.aclweb.org/anthology/D17-1227"
-]
+];
 
 var pub2 = newpublication(Data2);
 pub2.createPanel();
@@ -768,9 +768,9 @@ var Data1 = [
     "We introduce the problem of active multi-label learning where the queries are restricted to come from randomly varying subsets. This setting captures crowd sourcing scenarios where there are multiple experts with different types of expertise, and not all experts are available at all times. We generalize the framework of adaptive submodularity and prove the first near optimal approximation bound for a greedy policy for this setting. We instantiate this framework for multi-label learning and evaluate it in multiple benchmark domains with promising results.",
     "NA",
     "2017",
-    "NA",
+    "./templates/noLink.html",
     "https://www.semanticscholar.org/paper/Active-Multi-Label-Learning-with-Varying-Query-Sets-Hamidi-Haines-Goetschalckx/b10e8c9216d90d6a967813d0454f176021e8ec0a"
-]
+];
 
 var pub1 = newpublication(Data1);
 pub1.createPanel();
