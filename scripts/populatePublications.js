@@ -538,10 +538,240 @@ var Data17 = [
     "In this paper, we propose a novel explanation module to explain the predictions made by a deep network. The explanation module works by embedding a high-dimensional deep network layer nonlinearly into a low-dimensional explanation space while retaining faithfulness, so that the original deep learning predictions can be constructed from the few concepts extracted by the explanation module. We then visualize such concepts for human to learn about the high-level concepts that deep learning is using to make decisions. We propose an algorithm called Sparse Reconstruction Autoencoder (SRAE) for learning the embedding to the explanation space. SRAE aims to reconstruct part of the original feature space while retaining faithfulness. A pull-away term is applied to SRAE to make the explanation space more orthogonal. A visualization system is then introduced for human understanding of the features in the explanation space. The proposed method is applied to explain CNN models in image classification tasks, and several novel metrics are introduced to evaluate the performance of explanations quantitatively without human involvement. Experiments show that the proposed approach generates interesting explanations of the mechanisms CNN use for making predictions.",
     "April",
     "2018",
-    "http://people.oregonstate.edu/~khorrams/files/Embedding%20Deep%20Networks%20into%20Visual%20Explanations.pdff",
+    "http://people.oregonstate.edu/~khorrams/files/Embedding%20Deep%20Networks%20into%20Visual%20Explanations.pdf",
     "https://arxiv.org/abs/1709.05360"
 ]
 
 var pub17 = newpublication(Data17);
 pub17.createPanel();
 pub17.createList();
+
+//
+var Data16 = [
+    "Toward Theory-Based End-User Software Engineering.",
+    "Margaret Burnett, Todd Kulesza, Alannah Oleson, Shannon Ernst, Laura Beckwith, Jill Cao, William Jernigan, Valentina Grigoreanu . (2017). Toward Theory-Based End-User Software Engineering. in New Perspectives in End-User Development (F. Paterno and V. Wulf, eds.), 2017.",
+    "One area of research in the end-user development area is known as end-user software engineering (EUSE). Research in EUSE aims to invent new kinds of technologies that collaborate with end users to improve the quality of their software. EUSE has become an active research area since its birth in the early 2000s, with a large body of literature upon which EUSE researchers can build. However, building upon these works can be difficult when projects lack connections due to an absence of cross-cutting foundations to tie them together. In this chapter, we advocate for stronger theory foundations and show the advantages through three theory-oriented projects: (1) the Explanatory Debugging approach, to help end users debug their intelligent assistants; (2) the GenderMag method, which identifies problems with gender inclusiveness in EUSE tools and other software; and (3) the Idea Garden approach, to help end users to help themselves in overcoming programming barriers. In each of these examples, we show how having a theoretical foundation facilitated generalizing beyond individual tools to the production of general methods and principles for other researchers to directly draw upon in their own works.",
+    "August",
+    "2017",
+    "https://alannaholeson.com/papers/EUDbook2-2ndEd-theory+EUSE-distrib.pdf",
+    "https://link.springer.com/chapter/10.1007/978-3-319-60291-2_10"
+]
+
+var pub16 = newpublication(Data16);
+pub16.createPanel();
+pub16.createList();
+
+//
+var Data15 = [
+    "Multi-task Structured Prediction for Entity Analysis: Search-based Learning Algorithms.",
+    "Chao Ma, Janardhan Rao Doppa, Prasad Tadepalli, Hamed Shahbazi, and Xiaoli Fern. (2017). Multi-task Structured Prediction for Entity Analysis: Search-based Learning Algorithms. The 9th Asian Conference on Machine Learning.",
+    "Entity analysis in natural language processing involves solving multiple structured prediction problems such as mention detection, coreference resolution, and entity linking. We explore the space of search-based learning approaches to solve the problem of \em multi-task structured prediction (MTSP) in the context of entity analysis. In this paper, we study three different search architectures to solve MTSP problems that make different tradeoffs between speed and accuracy of training and inference. In all three architectures, we learn one or more scoring functions that employ both intra-task and inter-task features. In the “pipeline” architecture, which is the fastest, we solve different tasks one after another in a pipelined fashion. In the “joint” architecture, which is the most expensive, we formulate MTSP as a single-task structured prediction, and search the joint space of multi-task structured outputs. To improve the speed of joint architecture, we introduce two different pruning methods and associated learning techniques. In the intermediate “cyclic” architecture, we cycle through the tasks multiple times in sequence until there is no performance improvement. Results on two benchmark domains show that the joint architecture improves over the pipeline approach as well as the previous state-of-the-art approach based on graphical models. The cyclic architecture is faster than the joint approach and achieves competitive performance.",
+    "November",
+    "2017",
+    "http://people.oregonstate.edu/~machao/homepage/acml17-mtsp/ma17.pdf",
+    "http://proceedings.mlr.press/v77/ma17a.html"
+]
+
+var pub15 = newpublication(Data15);
+pub15.createPanel();
+pub15.createList();
+
+var Data14 = [
+    "How the Experts Do It: Assessing and Explaining Agent Behaviors in Real-Time Strategy Games.",
+    "J. Dodge, S. Penney, C. Hilderbrand, A. Anderson, and M. Burnett. (2017). How the Experts Do It: Assessing and Explaining Agent Behaviors in Real-Time Strategy Games. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI ‘18). ACM.",
+    "How should an AI-based explanation system explain an agent's complex behavior to ordinary end users who have no background in AI? Answering this question is an active research area, for if an AI-based explanation system could effectively explain intelligent agents' behavior, it could enable the end users to understand, assess, and appropriately trust (or distrust) the agents attempting to help them. To provide insights into this question, we turned to human expert explainers in the real-time strategy domain --'shoutcasters'-- to understand (1) how they foraged in an evolving strategy game in real time, (2) how they assessed the players' behaviors, and (3) how they constructed pertinent and timely explanations out of their insights and delivered them to their audience. The results provided insights into shoutcasters' foraging strategies for gleaning information necessary to assess and explain the players; a characterization of the types of implicit questions shoutcasters answered; and implications for creating explanations by using the patterns and abstraction levels these human experts revealed.",
+    "April",
+    "2018",
+    "https://dl.acm.org/doi/abs/10.1145/3173574.3174136",
+    "https://dl.acm.org/doi/pdf/10.1145/3173574.3174136"
+]
+
+var pub14 = newpublication(Data14);
+pub14.createPanel();
+pub14.createList();
+
+var Data13 = [
+    "Toward Foraging for Understanding of StarCraft Agents: An Empirical Study",
+    "S. Penney, J. Dodge, C. Hilderbrand, A. Anderson, L. Simpson, and M. Burnett. (2017). Toward Foraging for Understanding of StarCraft Agents: An Empirical Study. In Proceedings of the 23rd International Conference on Intelligent User Interfaces (IUI ‘18). ACM.",
+    "Assessing and understanding intelligent agents is a difficult task for users that lack an AI background. A relatively new area, called 'Explainable AI,' is emerging to help address this problem, but little is known about how users would forage through information an explanation system might offer. To inform the development of Explainable AI systems, we conducted a formative study, using the lens of Information Foraging Theory, into how experienced users foraged in the domain of StarCraft to assess an agent. Our results showed that participants faced difficult foraging problems. These foraging problems caused participants to entirely miss events that were important to them, reluctantly choose to ignore actions they did not want to ignore, and bear high cognitive, navigation, and information costs to access the information they needed.",
+    "March",
+    "2018",
+    "https://dl.acm.org/doi/pdf/10.1145/3172944.3172946",
+    "https://dl.acm.org/doi/10.1145/3172944.3172946"
+]
+
+var pub13 = newpublication(Data13);
+pub13.createPanel();
+pub13.createList();
+
+var Data12 = [
+    "Learning Explainable Embeddings for Deep Networks",
+    "Zhongang Qi and Fuxi Li. Learning Explainable Embeddings for Deep Networks. (2017). NIPS Workshop on Interpreting, Explaining and Visualizing Deep Learning.",
+    "We propose a novel explanation module to explain the predictions made by deep learning. Explanation module works by embedding a high-dimensional deep network layer nonlinearly into a low-dimensional explanation space while retaining faithfulness, so that the original deep learning predictions can be constructed from the few concepts extracted by the explanation module. We then visualize such concepts for human to learn about the high-level concepts that deep learning is using to make decisions. We propose Sparse Reconstruction Autoencoder (SRAE) for learning the embedding to the explanation space. SRAE aims to reconstruct part of the original feature space while retaining faithfulness. The proposed method is applied to explain CNN models in image classification tasks, and several novel metrics are introduced to evaluate the performance of explanations quantitatively without human involvement. Experiments show that the proposed approach could generate better explanations of the mechanisms CNN to use for making predictions in the task.",
+    "December",
+    "2017",
+    "http://www.interpretable-ml.org/nips2017workshop/papers/04.pdf",
+    "https://www.semanticscholar.org/paper/Learning-Explainable-Embeddings-for-Deep-Networks-Qi-Li/d9c08a77a72a18e131c80fddefcb04282bea8d4e"
+]
+
+var pub12 = newpublication(Data12);
+pub12.createPanel();
+pub12.createList();
+
+var Data11 = [
+    "Visualizing and Understanding Atari Agents.",
+    "Sam Greydanus, Anurag Koul, Jonathan Dodge, and Alan Fern. (2017). Visualizing and Understanding Atari Agents. NIPS Workshop on Interpreting, Explaining and Visualizing Deep Learning.",
+    "While deep reinforcement learning (deep RL) agents are effective at maximizing rewards, it is often unclear what strategies they use to do so. In this paper, we take a step toward explaining deep RL agents through a case study using Atari 2600 environments. In particular, we focus on using saliency maps to understand how an agent learns and executes a policy. We introduce a method for generating useful saliency maps and use it to show 1) what strong agents attend to, 2) whether agents are making decisions for the right or wrong reasons, and 3) how agents evolve during learning. We also test our method on non-expert human subjects and find that it improves their ability to reason about these agents. Overall, our results show that saliency information can provide significant insight into an RL agent's decisions and learning behavior.",
+    "October",
+    "2017",
+    "http://proceedings.mlr.press/v80/greydanus18a/greydanus18a.pdf",
+    "https://arxiv.org/abs/1711.00138"
+]
+
+var pub11 = newpublication(Data11);
+pub11.createPanel();
+pub11.createList();
+
+//
+var Data10 = [
+    "Adaptive Submodularity with Varying Query Sets: An Application to Active Multi-label Learning",
+    "Mandana Hamidi-Haines, Robby Goetschalckx, Prasad Tadepalli, and Alan Fern. (2017). Adaptive Submodularity with Varying Query Sets: An Application to Active Multi-label Learning. International Conference on Algorithmic Learning Theory.",
+    "Adaptive submodular optimization, where a sequence of items is selected adaptively to optimize a submodular function, has been found to have many applications from sensor placement to active learning. In the current paper, we extend this work to the setting of multiple queries at each time step, where the set of available queries is randomly constrained. A primary contribution of this paper is to prove the first near optimal approximation bound for a greedy policy in this setting. A natural application of this framework is to crowd-sourced active learning problem where the set of available experts and examples might vary randomly. We instantiate the new framework for multi-label learning and evaluate it in multiple benchmark domains with promising results.",
+    "NA",
+    "2017",
+    "http://proceedings.mlr.press/v76/fern17a/fern17a.pdf",
+    "http://proceedings.mlr.press/v76/fern17a.html"
+]
+
+var pub10 = newpublication(Data10);
+pub10.createPanel();
+pub10.createList();
+
+//
+var Data9 = [
+    "OSU Multimodal Machine Translation System Report",
+    "Mingbo Ma, Dapeng Li, Kai Zhao and Liang Huang. (2017). OSU Multimodal Machine Translation System Report. Proceedings of the Second Conference on Machine Translation.",
+    "This paper describes Oregon State University's submissions to the shared WMT'17 task 'multimodal translation task I'. In this task, all the sentence pairs are image captions in different languages. The key difference between this task and conventional machine translation is that we have corresponding images as additional information for each sentence pair. In this paper, we introduce a simple but effective system which takes an image shared between different languages, feeding it into the both encoding and decoding side. We report our system's performance for English-French and English-German with Flickr30K (in-domain) and MSCOCO (out-of-domain) datasets. Our system achieves the best performance in TER for English-German for MSCOCO dataset.",
+    "September",
+    "2017",
+    "https://www.aclweb.org/anthology/W17-4751.pdf",
+    "https://www.aclweb.org/anthology/W17-4751"
+]
+
+var pub9 = newpublication(Data9);
+pub9.createPanel();
+pub9.createList();
+
+//
+var Data8 = [
+    "Fast(er) Exact Decoding and Global Training for Transition-based Dependency Parsing via a Minimal Feature Set",
+    "Tianze Shi, Liang Huang, and Lillian Lee. (2017). Fast(er) Exact Decoding and Global Training for Transition-Based Dependency Parsing Via A Minimal Feature Set. Proceedings of EMNLP.",
+    "We first present a minimal feature set for transition-based dependency parsing, continuing a recent trend started by Kiperwasser and Goldberg (2016a) and Cross and Huang (2016a) of using bi-directional LSTM features. We plug our minimal feature set into the dynamic-programming framework of Huang and Sagae (2010) and Kuhlmann et al. (2011) to produce the first implementation of worst-case O(n^3) exact decoders for arc-hybrid and arc-eager transition systems. With our minimal features, we also present O(n^3) global training methods. Finally, using ensembles including our new parsers, we achieve the best unlabeled attachment score reported (to our knowledge) on the Chinese Treebank and the 'second-best-in-class' result on the English Penn Treebank.",
+    "September",
+    "2017",
+    "https://www.cs.cornell.edu/home/llee/papers/exact_decoding.pdf",
+    "http://www.cs.cornell.edu/~tianze/publications/17-emnlp-transition-dp-parsing"
+]
+
+var pub8 = newpublication(Data8);
+pub8.createPanel();
+pub8.createList();
+
+//
+var Data7 = [
+    "Joint Syntacto-Discourse Parsing and the Syntacto-Discourse Treebank",
+    "Kai Zhao and Liang Huang. Joint Syntacto-Discourse Parsing and the Syntacto-Discourse Treebank. In Proceedings of EMNLP 2017",
+    "Discourse parsing has long been treated as a stand-alone problem independent from constituency or dependency parsing. Most attempts at this problem rely on annotated text segmentations (Elementary Discourse Units, EDUs) and sophisticated sparse or continuous features to extract syntactic information. In this paper we propose the first end-to-end discourse parser that jointly parses in both syntax and discourse levels, as well as the first syntacto-discourse treebank by integrating the Penn Treebank and the RST Treebank. Built upon our recent span-based constituency parser, this joint syntacto-discourse parser requires no preprocessing efforts such as segmentation or feature extraction, making discourse parsing more convenient. Empirically, our parser achieves the state-of-the-art end-to-end discourse parsing accuracy.",
+    "September",
+    "2017",
+    "https://www.aclweb.org/anthology/D17-1225.pdf",
+    "https://www.aclweb.org/anthology/D17-1225/"
+]
+
+var pub7 = newpublication(Data7);
+pub7.createPanel();
+pub7.createList();
+
+var Data6 = [
+    "Jointly Trained Sequential Labeling and Classification by Sparse Attention Neural Networks",
+    "Mingbo Ma, Kai Zhao, Liang Huang, Bing Xiang, Bowen Zhou. (2017). Jointly Trained Sequential Labeling and Classification by Sparse Attention Neural Networks. Proceedings of Interspeech.",
+    "Sentence-level classification and sequential labeling are two fundamental tasks in language understanding. While these two tasks are usually modeled separately, in reality, they are often correlated, for example in intent classification and slot filling, or in topic classification and named-entity recognition. In order to utilize the potential benefits from their correlations, we propose a jointly trained model for learning the two tasks simultaneously via Long Short-Term Memory (LSTM) networks. This model predicts the sentence-level category and the word-level label sequence from the stepwise output hidden representations of LSTM. We also introduce a novel mechanism of 'sparse attention' to weigh words differently based on their semantic relevance to sentence-level classification. The proposed method outperforms baseline models on ATIS and TREC datasets.",
+    "August",
+    "2017",
+    "https://www.isca-speech.org/archive/Interspeech_2017/pdfs/1321.PDF",
+    "https://arxiv.org/abs/1709.10191"
+]
+
+var pub6 = newpublication(Data6);
+pub6.createPanel();
+pub6.createList();
+
+var Data5 = [
+    "Group Sparse CNNs for Question Classification with Answer Sets.",
+    "Mingbo Ma, Liang Huang, Bing Xiang, Bowen Zhou. (2017). Group Sparse CNNs for Question Classification with Answer Sets. Proceedings of ACL 2017.",
+    "Question classification is an important task with wide applications. However, traditional techniques treat questions as general sentences, ignoring the corresponding answer data. In order to consider answer information into question modeling, we first introduce novel group sparse autoencoders which refine question representation by utilizing group information in the answer set. We then propose novel group sparse CNNs which naturally learn question representation with respect to their answers by implanting group sparse autoencoders into traditional CNNs. The proposed model significantly outperform strong baselines on four datasets.",
+    "July",
+    "2017",
+    "https://www.aclweb.org/anthology/P17-2053.pdf",
+    "https://www.aclweb.org/anthology/P17-2053/"
+]
+
+var pub5 = newpublication(Data5);
+pub5.createPanel();
+pub5.createList();
+
+var Data4 = [
+    "Foraging Goes Mobile: Foraging While Debugging on Mobile Devices.",
+    "David Piorkowski, Sean Penney, Austin Henley, Marco Pistoia, Margaret Burnett, Omer Tripp and Pietro Ferrara. (2017). Foraging Goes Mobile: Foraging While Debugging on Mobile Devices. IEEE Symposium on Visual Languages and Human-Centric Computing.",
+    "Although Information Foraging Theory (IFT) research for desktop environments has provided important insights into numerous information foraging tasks, we have been unable to locate IFT research for mobile environments. Despite the limits of mobile platforms, mobile apps are increasingly serving functions that were once exclusively the territory of desktops - and as the complexity of mobile apps increases, so does the need for foraging. In this paper we investigate, through a theory-based, dual replication study, whether and how foraging results from a desktop IDE generalize to a functionally similar mobile IDE. Our results show ways prior foraging research results from desktop IDEs generalize to mobile IDEs and ways they do not, and point to challenging open research questions for foraging on mobile environments.",
+    "October",
+    "2017",
+    "http://web.eecs.utk.edu/~azh/pubs/Piorkowski2017VLHCC_MobileForaging.pdf",
+    "https://ieeexplore.ieee.org/document/8103444/"
+]
+
+var pub4 = newpublication(Data4);
+pub4.createPanel();
+pub4.createList();
+
+var Data3 = [
+    "Budget-Aware Deep Semantic Video Segmentation.",
+    "Behrooz Mahasseni, Sinisa Todorovic, and Alan Fern. (2017). Budget-Aware Deep Semantic Video Segmentation. IEEE Conference on Computer Vision and Pattern Recognition.",
+    "In this work, we study a poorly understood trade-off between accuracy and runtime costs for deep semantic video segmentation. While recent work has demonstrated advantages of learning to speed-up deep activity detection, it is not clear if similar advantages will hold for our very different segmentation loss function, which is defined over individual pixels across the frames. In deep video segmentation, the most time consuming step represents the application of a CNN to every frame for assigning class labels to every pixel, typically taking 6-9 times of the video footage. This motivates our new budget-aware framework that learns to optimally select a small subset of frames for pixelwise labeling by a CNN, and then efficiently interpolates the obtained segmentations to yet unprocessed frames. This interpolation may use either a simple optical-flow guided mapping of pixel labels, or another significantly less complex and thus faster CNN. We formalize the frame selection as a Markov Decision Process, and specify a Long Short-Term Memory (LSTM) network to model a policy for selecting the frames. For training the LSTM, we develop a policy-gradient reinforcement-learning approach for approximating the gradient of our non-decomposable and non-differentiable objective. Evaluation on two benchmark video datasets show that our new framework is able to significantly reduce computation time, and maintain competitive video segmentation accuracy under varying budgets.",
+    "July",
+    "2017",
+    "http://web.engr.oregonstate.edu/~sinisa/research/publications/cvpr17_budget.pdf",
+    "https://ieeexplore.ieee.org/document/8099707"
+]
+
+var pub3 = newpublication(Data3);
+pub3.createPanel();
+pub3.createList();
+
+var Data2 = [
+    "When to Finish? Optimal Beam Search for Neural Text Generation (modulo beam size).",
+    "Liang Huang, Kai Zhao and Mingbo Ma. (2017). When to Finish? Optimal Beam Search for Neural Text Generation (modulo beam size). Proceedings of EMNLP.",
+    "In neural text generation such as neural machine translation, summarization, and image captioning, beam search is widely used to improve the output text quality. However, in the neural generation setting, hypotheses can finish in different steps, which makes it difficult to decide when to end beam search to ensure optimality. We propose a provably optimal beam search algorithm that will always return the optimal-score complete hypothesis (modulo beam size), and finish as soon as the optimality is established. To counter neural generation’s tendency for shorter hypotheses, we also introduce a bounded length reward mechanism which allows a modified version of our beam search algorithm to remain optimal. Experiments on neural machine translation demonstrate that our principled beam search algorithm leads to improvement in BLEU score over previously proposed alternatives.",
+    "September",
+    "2017",
+    "https://www.aclweb.org/anthology/D17-1227.pdf",
+    "https://www.aclweb.org/anthology/D17-1227"
+]
+
+var pub2 = newpublication(Data2);
+pub2.createPanel();
+pub2.createList();
+
+var Data1 = [
+    "Active Multi-Label Learning with Varying Query Sets.",
+    "Mandana Hamidi-Haines, Robby Goetshalchx, Prasad Tadepalli, and Alan Fern. (2017). Active Multi-Label Learning with Varying Query Sets. Picky Learners Workshop at the International Conference on Machine Learning.",
+    "We introduce the problem of active multi-label learning where the queries are restricted to come from randomly varying subsets. This setting captures crowd sourcing scenarios where there are multiple experts with different types of expertise, and not all experts are available at all times. We generalize the framework of adaptive submodularity and prove the first near optimal approximation bound for a greedy policy for this setting. We instantiate this framework for multi-label learning and evaluate it in multiple benchmark domains with promising results.",
+    "NA",
+    "2017",
+    "NA",
+    "https://www.semanticscholar.org/paper/Active-Multi-Label-Learning-with-Varying-Query-Sets-Hamidi-Haines-Goetschalckx/b10e8c9216d90d6a967813d0454f176021e8ec0a"
+]
+
+var pub1 = newpublication(Data1);
+pub1.createPanel();
+pub1.createList();
