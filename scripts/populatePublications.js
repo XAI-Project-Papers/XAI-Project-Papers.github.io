@@ -121,7 +121,7 @@ var Data46 = [
     "Jonathan Dodge and Margaret Burnett. (2020). Position: We Can Measure XAI Explanations Better with &quot;Templates&quot;. IUI ExSS-ATEC Workshop.",
     "No Abstract",
     " ",
-    " ",
+    "2020",
     "./templates/noLink.html",
     "./templates/noLink.html"
 ];

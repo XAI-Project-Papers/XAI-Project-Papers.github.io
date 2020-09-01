@@ -126,6 +126,8 @@ body{
     font-size: 0.9em;
     padding: 20px;
     background: linear-gradient(to bottom, lightgrey, #fdfdfd);
+    height: 350px;
+    overflow-y: scroll;
 }
 
 .panDes, .pubDes, .abstract{
@@ -222,6 +224,19 @@ body{
 
 #ol a{
     color: #3582fc;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #999999;
+    border-radius: 10px;
 }
 
 @media (max-width: 700px){
