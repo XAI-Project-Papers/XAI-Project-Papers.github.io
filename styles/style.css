@@ -231,12 +231,15 @@ body{
 }
  
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background: transparent;
 }
  
 ::-webkit-scrollbar-thumb {
-    background: #999999;
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+    background: lightgrey;
     border-radius: 10px;
+    margin-top: 10px;
+    border: 2px solid white;
 }
 
 @media (max-width: 700px){
@@ -270,11 +273,29 @@ body{
     }
     #panels{
         margin-top: 150px;
+        align-self: baseline;
     }
     #searchResults{
         padding-top: 80px;
     }
     #noResults{
         padding-top: 110px;
+    }
+    .panelContent{
+        line-height: 1.5;
+        font-size: 0.9em;
+        padding: 20px;
+        background: linear-gradient(to bottom, lightgrey, #fdfdfd);
+        height: auto;
+    }
+    #toggleView{
+        padding: 5px 20px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8em;
+        align-items: left;
+        position: absolute;
+        left: 9.5vw;
+        max-width: 100px;
     }
 }
