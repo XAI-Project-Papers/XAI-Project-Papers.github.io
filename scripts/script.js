@@ -18,7 +18,7 @@ function search(){
     var searchResults = document.getElementById("searchResults");
     var panels = document.getElementById("panels");
     var lists = document.getElementById("ol");
-    searchResults.innerHTML = "Search results for '" + userInput + "' in abstract and reference/list view"; //writing search results message
+    searchResults.innerHTML = "Search results for '" + userInput + "' in Panel and List View:"; //writing search results message
     searchResults.style.display = "inline";
     panels.style.marginTop = "190px"; //adding spacing above panels so search message does not overlap
     lists.style.marginTop = "190px"; //adding spacing above lists so search message does not overlap

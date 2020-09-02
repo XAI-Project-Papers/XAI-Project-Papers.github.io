@@ -68,25 +68,25 @@ var Data50 = [
     "https://arxiv.org/abs/2006.03745"
 ];
 
-/* var pub50 = new publication(Data50);
+var pub50 = new publication(Data50);
 pub50.createPanel();
-pub50.createList(); */
+pub50.createList();
 
 //for black - Related paper
 
 var Data49 = [
     "and Understanding Finite-State Representations of Recurrent Policy Networks",
     "Mohamad Danesh, Anurag Koul, Alan Fern. (2020). and Understanding Finite-State Representations of Recurrent Policy Networks. ICML 2020 Workshop on XXAI: Extending Explainable AI Beyond Deep Models and Classifiers",
-    "No Abstract",
+    "Abstract Currently Unavailable. <br>For more information, look at the reference provided here: <br><br> Mohamad Danesh, Anurag Koul, Alan Fern. (2020). and Understanding Finite-State Representations of Recurrent Policy Networks. ICML 2020 Workshop on XXAI: Extending Explainable AI Beyond Deep Models and Classifiers.",
     " ",
-    " ",
+    "2020",
     "./templates/noLink.html",
     "./templates/noLink.html"
 ];
 
-/* var pub49 = new publication(Data49);
+var pub49 = new publication(Data49);
 pub49.createPanel();
-pub49.createList(); */
+pub49.createList();
 
 var Data48 = [
     "The Shoutcasters, the Game Enthusiasts, and the AI: Foraging for Explanations of Real-Time Strategy Players",
