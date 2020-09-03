@@ -4,7 +4,7 @@ class publication{
 
         this.listItem = "<li>";
         this.listPubTitle = "<p class='pubTitle'>" + dataArray[0] + "</p>";
-        this.listReference = "<p class='pubDes'>" + dataArray[1] + "</p>";
+        this.listReference = "<p class='pubDes'>" + dataArray[1] + " <a href=" + dataArray[6] + ">" + dataArray[6] + "</a>" + "</p>";
         //link here
         this.listItemEnd = "</li>";
 
@@ -23,7 +23,7 @@ class publication{
         //divEnd for panelExtras here
         //divEnd for outerPanel here
 
-        this.lsFinal = this.listItem + this.listPubTitle + this.listReference + this.listItemEnd;
+        this.lsFinal = this.listItem + this.listPubTitle + this.link + this.listReference + this.listItemEnd;
 
         this.panFinal = this.outerPanel + this.panelContent + this.pubTitle + this.reference + this.abstract + this.divEnd + this.panelExtras + this.iconText + this.icon + this.date + this.divEnd + this.link + this.divEnd + this.divEnd;
     }
@@ -119,7 +119,7 @@ pub47.createList();
 var Data46 = [
     "Position: We Can Measure XAI Explanations Better with &quot;Templates&quot;",
     "Jonathan Dodge and Margaret Burnett. (2020). Position: We Can Measure XAI Explanations Better with &quot;Templates&quot;. IUI ExSS-ATEC Workshop.",
-    "No Abstract",
+    "Abstract Currently Unavailable. <br>For more information, look at the reference provided here: <br><br> Jonathan Dodge and Margaret Burnett. (2020). Position: We Can Measure XAI Explanations Better with &quot;Templates&quot;. IUI ExSS-ATEC Workshop.",
     " ",
     "2020",
     "./templates/noLink.html",

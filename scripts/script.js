@@ -81,7 +81,7 @@ function checkPanel(panel, searchInput){
                 var val = childItem.children[n].innerText.toUpperCase();
                 var cInnerHTML = childItem.children[n].innerHTML;
                 if (val.indexOf(searchInput) > -1){
-                    childItem.children[n].style.backgroundColor = "red";
+                    childItem.children[n].style.backgroundColor = "blue";
                     found += 1;
                 }
             }
