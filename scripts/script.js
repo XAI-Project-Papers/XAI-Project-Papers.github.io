@@ -29,7 +29,6 @@ function search(){
         var panels = document.getElementById("panels");
         var lists = document.getElementById("ol");
         var classesArray = null;
-        var classesArray2 = null;
         for (var i = 0; i < panels.children.length; i++){
             classesArray = panels.children[i].className.split(/\s+/);
             if (classesArray.indexOf("panel") > -1){
