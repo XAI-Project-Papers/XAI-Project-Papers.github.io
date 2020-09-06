@@ -6,7 +6,7 @@ class publication{
         this.listPubTitle = "<p class='pubTitle'>" + dataArray[0] + "</p>";
         this.listReference = "<p class='pubDes'>" + dataArray[1] + " <a href=" + dataArray[6] + ">" + dataArray[6] + "</a>" + "</p>";
         //link here
-        this.listItemEnd = "</li> <br><hr style='background-color: lightgrey; border: 0.5px solid lightgrey; width: 95%;'><br>";
+        this.listItemEnd = "<br><hr style='background-color: lightgrey; border: 0.5px solid lightgrey; width: 95%;'><br></li>";
 
         this.outerPanel = "<div class='panel'>";
         this.panelContent = "<div class='panelContent'>";
