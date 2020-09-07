@@ -107,10 +107,7 @@ body{
 
 #ud:hover{
     background-color: #666666;
-}
-
-#jumpTo{
-    padding: 20px;
+    -webkit-transition: 1s ease top;
 }
 
 #searchResults{
@@ -207,6 +204,7 @@ body{
     height: 350px;
     overflow-y: scroll;
     color: lightgrey;
+    overflow-x: hidden;
 }
 
 .panDes, .pubDes, .abstract{
