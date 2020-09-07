@@ -76,7 +76,6 @@ body{
     border-radius: 5px;
     outline: none;
     padding: 0 2%;
-    z-index: 100000000000000;
 }
 
 #searchBar2{
@@ -106,7 +105,8 @@ body{
 }
 
 #ud:hover{
-    background-color: #666666;
+    background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), #DC4405;
+    transition: 1s ease top;
     -webkit-transition: 1s ease top;
 }
 
