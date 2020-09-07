@@ -12,7 +12,28 @@ Search Algorithm:
 [8] if the searchbox is cleared, reload the page
 */
 
-function search(){
+// When the user scrolls the page, execute myFunction
+window.onscroll = function () { stickBar() };
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickBar() {
+    var searchBar2 = document.getElementById("searchBar2");
+    var navBar = document.getElementById("navBar");
+    if (window.pageYOffset >= 500) {
+        searchBar2.style.display = "inline";
+        navBar.style.backgroundColor = "grey";
+        navBar.style.paddingTop = "5px";
+        navBar.style.boxShadow = "0 6px 12px #111111";
+    }
+    else {
+        searchBar2.style.display = "none";
+        navBar.style.backgroundColor = "";
+        navBar.style.paddingTop = "";
+        navBar.style.boxShadow = "none";
+    }
+}
+
+function search() {
     var userInput = document.getElementById("searchBar").value;
     var input = document.getElementById("searchBar").value.toUpperCase();
     var searchResults = document.getElementById("searchResults");
@@ -22,16 +43,16 @@ function search(){
     searchResults.style.display = "inline";
     panels.style.marginTop = "190px"; //adding spacing above panels so search message does not overlap
     lists.style.marginTop = "190px"; //adding spacing above lists so search message does not overlap
-    if (!input){
+    if (!input) {
         window.location.reload();
     }
-    else{
+    else {
         var panels = document.getElementById("panels");
         var lists = document.getElementById("ol");
         var classesArray = null;
-        for (var i = 0; i < panels.children.length; i++){
+        for (var i = 0; i < panels.children.length; i++) {
             classesArray = panels.children[i].className.split(/\s+/);
-            if (classesArray.indexOf("panel") > -1){
+            if (classesArray.indexOf("panel") > -1) {
                 checkPanel(panels.children[i], input);
                 checkForResults();
             }
@@ -39,8 +60,8 @@ function search(){
                 alert("An error occured when searching in " + toString(panels[i].id));
             }
         }
-        for (var i = 0; i < lists.childElementCount; i++){
-            if (lists.children[i].nodeName == "LI"){
+        for (var i = 0; i < lists.childElementCount; i++) {
+            if (lists.children[i].nodeName == "LI") {
                 checkList(lists.children[i], input);
             }
             else {
@@ -50,70 +71,69 @@ function search(){
     }
 }
 
-function checkList(listItem, searchInput){
-    for (var n = 0; n < listItem.childElementCount; n++){
+function checkList(listItem, searchInput) {
+    for (var n = 0; n < listItem.childElementCount; n++) {
         var val = listItem.children[n].innerText.toUpperCase();
-        if (val.indexOf(searchInput) > -1){
+        if (val.indexOf(searchInput) > -1) {
             listItem.children[n].style.backgroundColor = "yellow";
         }
     }
 }
 
-function checkPanel(panel, searchInput){
+function checkPanel(panel, searchInput) {
     var found = 0;
     var classesArray = null;
     var childItem = null;
-    for (var i = 0; i < panel.children.length; i++){
+    for (var i = 0; i < panel.children.length; i++) {
         childItem = panel.children[i];
         classesArray = childItem.className.split(/\s+/);
-        if (classesArray.indexOf("panelContent") > -1){
-            for (var n = 0; n < childItem.children.length; n++){
+        if (classesArray.indexOf("panelContent") > -1) {
+            for (var n = 0; n < childItem.children.length; n++) {
                 var val = childItem.children[n].innerText.toUpperCase();
-                if (val.indexOf(searchInput) > -1){
-                    childItem.children[n].style.backgroundColor = "yellow";
+                if (val.indexOf(searchInput) > -1) {
                     found += 1;
                 }
             }
         }
-        else if (classesArray.indexOf("panelExtras") > -1){
-            for (var n = 0; n < childItem.children.length; n++){
+        else if (classesArray.indexOf("panelExtras") > -1) {
+            for (var n = 0; n < childItem.children.length; n++) {
                 var val = childItem.children[n].innerText.toUpperCase();
                 var cInnerHTML = childItem.children[n].innerHTML;
-                if (val.indexOf(searchInput) > -1){
+                if (val.indexOf(searchInput) > -1) {
                     childItem.children[n].style.backgroundColor = "blue";
                     found += 1;
                 }
             }
         }
-        else{
+        else {
             alert("An error occured when searching in " + toString(panel[i].parentNode.id));
         }
         break;
     }
-    if (found == 0){
+    if (found == 0) {
         panel.style.display = "none";
     }
 }
 
 
 
-function checkForResults(){
+function checkForResults() {
     var panels = document.getElementById("panels");
     var noResults = document.getElementById("noResults");
     var numberOfActivePanels = 0;
 
-    for (var i = 0; i<panels.childElementCount; i++){
-        if (panels.children[i].style.display !== "none"){
+    for (var i = 0; i < panels.childElementCount; i++) {
+        if (panels.children[i].style.display !== "none") {
             numberOfActivePanels += 1;
         }
     }
-    if (numberOfActivePanels == 0){
+    if (numberOfActivePanels == 0) {
         noResults.style.display = "inline";
     }
 }
 
 //hides panel view and associated buttons, shows lists view
-function listsView(){
+function listsView() {
 
     //variable definitions
     var panels = document.getElementById("panels");
@@ -130,11 +150,11 @@ function listsView(){
 
     //hiding abstract and reference view buttons
     abstractView.style.display = "none";
-    refView.style.display="none";
+    refView.style.display = "none";
 }
 
 //hides lists, shows panels and associated buttons
-function panelsView(){
+function panelsView() {
 
     //variable definitions
     var panels = document.getElementById("panels");
@@ -151,11 +171,11 @@ function panelsView(){
 
     //showing abstract and reference view buttons
     abstractView.style.display = "";
-    refView.style.display="";
+    refView.style.display = "";
 }
 
 //switch the content inside a panel so it displays the abstract of the publication
-function switchToAbstract(){
+function switchToAbstract() {
 
     //variable definition
     var abstract = document.getElementsByClassName("abstract");
@@ -171,20 +191,20 @@ function switchToAbstract(){
     refView.classList.add("refAndAbstractLight");
 
     //for every reference
-    for (var i=0; i<length; i++){
+    for (var i = 0; i < length; i++) {
         //hide the reference/don't display it
-        panDes[i].style.display="none";
+        panDes[i].style.display = "none";
     }
 
     //for every abstract
-    for (var i=0; i<aLength; i++){
+    for (var i = 0; i < aLength; i++) {
         //show the abstract/display it
-        abstract[i].style.display="inline";
+        abstract[i].style.display = "inline";
     }
 }
 
 //switch the content inside a panel so it displays the reference of the publication
-function switchToReference(){
+function switchToReference() {
 
     //variable definition --look at previous function for more specifics
     var abstract = document.getElementsByClassName("abstract");
@@ -200,14 +220,14 @@ function switchToReference(){
     refView.classList.remove("refAndAbstractLight");
 
     //for every reference
-    for (var i=0; i<length; i++){
+    for (var i = 0; i < length; i++) {
         //display it
-        panDes[i].style.display="inline";
+        panDes[i].style.display = "inline";
     }
 
     //for every abstract
-    for (var i=0; i<aLength; i++){
+    for (var i = 0; i < aLength; i++) {
         //hide it
-        abstract[i].style.display="none";
+        abstract[i].style.display = "none";
     }
 }

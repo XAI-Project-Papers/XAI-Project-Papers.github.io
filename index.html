@@ -11,10 +11,23 @@
 </head>
 <body>
     <div id="landing">
+        <nav id="navBar">
+            <div id="navLeft">
+                <div class="navItem"><a href="index.html">Home</a></div>
+                <input type="search" placeholder="Search for a publication (keyword, publication year, etc.)" id="searchBar2" onsearch="search()">
+            </div>
+            <div id="navRight">
+                <div class="navItem"><a href="https://today.oregonstate.edu/archives/2017/jun/research-aims-make-artificial-intelligence-explain-itself">About XAI @ OSU</a></div>
+                <div class="navItem"><a href="#toggleView">View all publications</a></div>
+            </div>
+        </nav>
         <div class="center">
-            <h1 id="pageTitle">OSU XAI Project Papers</h1>
-            <input type="search" placeholder="Search for a publication..." id="searchBar" onsearch="search()">
-            <p id="titleDescription">Publications related to Oregon State University's eXplainable Artificial Intelligence Project</p>
+            <div id="pageTitle">
+                <h1 style="display: inline;">Oregon State University</h1>
+                <h1 style="display: inline; color: #DC4405">XAI</h1>
+            </div>
+            <input type="search" placeholder="Search for a publication" id="searchBar" onsearch="search()">
+            <p id="titleDescription">Publications related to OSU's <a id="ud" href="https://today.oregonstate.edu/archives/2017/jun/research-aims-make-artificial-intelligence-explain-itself">eXplainable Artificial Intelligence</a> Project</p>
         </div>
     </div>
 
