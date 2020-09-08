@@ -59,6 +59,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
+    background-position-x: center;
     color: white;
     margin-bottom: 45px;
 }
@@ -71,7 +72,7 @@ body{
 }
 
 #searchBar{
-    width: 45vw;
+    width: 38vw;
     height: 35px;
     border: 1px solid white;
     border-radius: 5px;
@@ -236,7 +237,7 @@ body{
     max-width: 80vw;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(309px, 1fr));
-    gap: 50px;
+    gap: 25px;
 }
 
 .panel{
@@ -380,7 +381,6 @@ body{
     font-size: 10px;
     margin-top: 100px;
     background: #444444;
-    width: 100%;
     padding: 3% 10%;
 }
 
@@ -390,7 +390,13 @@ body{
     overflow: break-word;
 }
 
-@media (max-width: 700px){
+@media (max-width: 1150px){
+    #pageTitle{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 720px){
     #clearButton2{
         background-color: lightpink;
         border: 1px solid transparent;
@@ -404,17 +410,21 @@ body{
         left: 9.5%;
         top: 190px;
     }
+    #landing{
+        background-attachment: scroll;
+    }
     #navBar{
         padding-top: 5px;
         background: grey;
         font-size: 10px;
+        overflow: hidden;
     }
     #navRight{
         position: absolute;
-        right: 18%;
+        right: 8%;
     }
     #pageTitle{
-        font-size: 30px;
+        font-size: 20px;
     }
     #searchBar2{
         visibility: hidden;
@@ -429,7 +439,7 @@ body{
         margin: 0;
     }
     #searchBar{
-        width: 80vw;
+        width: 70vw;
         height: 35px;
         border: 1px solid white;
         border-radius: 5px;
@@ -448,8 +458,9 @@ body{
         min-width: 190px;
     }
     #panels{
+        max-width: 90vw;
         margin-top: 150px;
-        align-self: baseline;
+        overflow: hidden;
     }
     #searchResults{
         padding-top: 80px;
@@ -472,5 +483,11 @@ body{
     }
     #noResults{
         bottom: -30%;
+    }
+}
+
+@media (max-width: 343px){
+    #panels{
+        grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     }
 }

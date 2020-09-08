@@ -19,7 +19,7 @@ window.onscroll = function () { stickBar() };
 function stickBar() {
     var searchBar2 = document.getElementById("searchBar2");
     var navBar = document.getElementById("navBar");
-    if (window.pageYOffset >= 500) {
+    if (window.pageYOffset >= 300) {
         searchBar2.style.display = "inline";
         navBar.style.backgroundColor = "grey";
         navBar.style.paddingTop = "5px";
