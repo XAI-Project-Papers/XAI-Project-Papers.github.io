@@ -3,6 +3,42 @@ body{
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 30px;
+    background-color: #242424;
+    overflow-x: hidden;
+}
+
+#navBar{
+    display: flex;
+    background: transparent;
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    height: 23px;
+    z-index: 100000;
+}
+
+.navItem{
+    display: inline-flex;
+    padding: 10px;
+}
+
+.navItem a{
+    color: white;
+    text-decoration: none;
+}
+
+.navItem :hover{
+    text-decoration: underline;
+}
+
+#navLeft{
+    position: absolute;
+    left: 1%
+}
+
+#navRight{
+    position: absolute;
+    right: 4%;
 }
 
 .center{
@@ -11,14 +47,15 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    width: auto;
 }
 
 #landing{
     position: relative;
     background-attachment: fixed;
-    width: 100vw;
-    height: 65vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("../images and icons/Crop5Edit.jpg");
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url("../images and icons/Crop5Edit.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -30,6 +67,7 @@ body{
     font-weight: 700;
     font-size: 40px;
     overflow-wrap: break-word;
+    padding-bottom: 20px;
 }
 
 #searchBar{
@@ -41,12 +79,98 @@ body{
     padding: 0 2%;
 }
 
+#clearButton1, #searchButton1{
+    font-weight: 700;
+    font-size: 25px;
+    width: 40px;
+    height: 36px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    padding-top: 2px;
+    margin: 0;
+    position: relative;
+    top: 5px;
+}
+
+#clearIcon, #searchIcon{
+    max-width: 25px;
+    position: relative;
+    top: 2px;
+}
+
+#clearButton1:hover, #searchButton1:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), #DC4405;
+}
+
+#searchButton1:hover #searchIcon{
+    filter: invert(1);
+}
+
+#searchBar2{
+    display: none;
+    width: 25vw;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 10%;
+    background: #666666;
+    position: absolute;
+    left: 20vw;
+    top: 8%;
+    color: white;
+}
+
+#searchBar2::placeholder{
+    color: #999999;
+}
+
+
+#ud{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #DC4405;
+}
+
+#ud:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)), #DC4405;
+    transition: 1s ease top;
+    -webkit-transition: 1s ease top;
+}
+
+#xIcon{
+    position: relative;
+    bottom: 1px;
+    width: 20px;
+    padding-right: 10px;
+}
+
+#clearButton2{
+    background-color: lightpink;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+    padding-top: 3px;
+    position: relative;
+    left: 9.5%;
+    top: 120px;
+}
+
+#clearButton2:hover{
+    filter: invert(0.2);
+}
+
 #searchResults{
     display: none;
     position: absolute;
     left: 9.5vw;
     padding-top: 40px;
-    color: #444444;
+    color: #999999;
 }
 
 #noResults{
@@ -55,7 +179,7 @@ body{
     color: grey;
     position: absolute;
     left: 9.5vw;
-    padding-top: 80px;
+    bottom: -20%;
     z-index: 0;
 }
 
@@ -116,19 +240,26 @@ body{
 }
 
 .panel{
-    box-shadow: 11px 8px 52px rgba(18,18,18,.35);
+    box-shadow: 11px 10px 12px rgba(0,0,0,0.25);
     border-top: 20px solid #DC4405;
     align-self: baseline;
     border-radius: 10px;
+}
+
+.panelContent a{
+    color: #4286f4;
 }
 
 .panelContent{
     line-height: 1.5;
     font-size: 0.9em;
     padding: 20px;
-    background: linear-gradient(to bottom, lightgrey, #fdfdfd);
+    /* background: linear-gradient(to bottom, lightgrey, #fdfdfd); */
+    background: #424242;
     height: 350px;
     overflow-y: scroll;
+    color: lightgrey;
+    overflow-x: hidden;
 }
 
 .panDes, .pubDes, .abstract{
@@ -143,7 +274,7 @@ body{
     padding: 5px 20px;
     display: flex;
     justify-content: space-between;
-    background-color: #444444;
+    background-color: #333333;
     color: white;
     font-size: 0.8em;
     align-items: center;
@@ -214,13 +345,15 @@ body{
 }
 
 #ol{
-    margin-left: 9vh;
+    margin: 5vw;
     margin-top: 20vh;
     border: 1px solid lightgrey;
+    overflow: hidden;
     border-radius: 5px;
     padding: 13px 30px 25px 35px;
     max-width: 84vw;
-    background-color: white;
+    background-color: #424242;
+    color: lightgrey;
     z-index: 1;
 }
 
@@ -243,7 +376,44 @@ body{
     margin-top: 10px;
 }
 
+#credits{
+    font-size: 10px;
+    margin-top: 100px;
+    background: #444444;
+    width: 100%;
+    padding: 3% 10%;
+}
+
+#creditLinks a{
+    color: #4286f4;
+    padding: 0 30px;
+    overflow: break-word;
+}
+
 @media (max-width: 700px){
+    #clearButton2{
+        background-color: lightpink;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        padding-right: 15px;
+        padding-top: 3px;
+        position: relative;
+        left: 9.5%;
+        top: 175px;
+    }
+    #navBar{
+        padding-top: 5px;
+        background: grey;
+    }
+    #pageTitle{
+        font-size: 30px;
+    }
+    #searchBar2{
+        visibility: hidden;
+    }
     .center{
         position: absolute;
         width: 90vw;
@@ -279,14 +449,10 @@ body{
     #searchResults{
         padding-top: 80px;
     }
-    #noResults{
-        padding-top: 110px;
-    }
     .panelContent{
         line-height: 1.5;
         font-size: 0.9em;
         padding: 20px;
-        background: linear-gradient(to bottom, lightgrey, #fdfdfd);
         height: auto;
     }
     #toggleView{
