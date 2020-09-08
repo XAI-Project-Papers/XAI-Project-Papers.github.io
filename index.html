@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
+
 <body>
     <div id="landing">
         <nav id="navBar">
             <div id="navLeft">
                 <div class="navItem"><a href="index.html">Home</a></div>
-                <input type="search" placeholder="Search for a publication (keyword, publication year, etc.)" id="searchBar2" onsearch="search()">
+                <input type="search" placeholder="Search for a publication (keyword, author, publication year, etc.)"
+                    id="searchBar2" onsearch="search(data, 'searchBar2')">
             </div>
             <div id="navRight">
-                <div class="navItem"><a href="https://today.oregonstate.edu/archives/2017/jun/research-aims-make-artificial-intelligence-explain-itself">About XAI @ OSU</a></div>
+                <div class="navItem"><a
+                        href="https://today.oregonstate.edu/archives/2017/jun/research-aims-make-artificial-intelligence-explain-itself">About
+                        XAI @ OSU</a></div>
                 <div class="navItem"><a href="#toggleView">View all publications</a></div>
             </div>
         </nav>
@@ -26,8 +31,14 @@
                 <h1 style="display: inline;">Oregon State University</h1>
                 <h1 style="display: inline; color: #DC4405">XAI</h1>
             </div>
-            <input type="search" placeholder="Search for a publication" id="searchBar" onsearch="search()">
-            <p id="titleDescription">Publications related to OSU's <a id="ud" href="https://today.oregonstate.edu/archives/2017/jun/research-aims-make-artificial-intelligence-explain-itself">eXplainable Artificial Intelligence</a> Project</p>
+            <input type="search" placeholder="Search for a publication (keyword, author, publication year, etc.)" id="searchBar" onsearch="search(data, 'searchBar')">
+            <button id="clearButton1" onclick="window.location.reload()"><img id="clearIcon"
+                    src="https://img.icons8.com/color/48/000000/clear-symbol.png" /></button>
+            <button id="searchButton1" onclick="search(data, 'searchBar')"><img id="searchIcon"
+                    src="https://img.icons8.com/material-rounded/48/000000/search.png" /></button>
+            <p id="titleDescription">Publications related to OSU's <a id="ud"
+                    href="https://today.oregonstate.edu/archives/2017/jun/research-aims-make-artificial-intelligence-explain-itself">eXplainable
+                    Artificial Intelligence</a> Project</p>
         </div>
     </div>
 
@@ -36,7 +47,7 @@
             <i class="material-icons">list</i>
             <p>List View</p>
         </div>
-    
+
         <div class="iconText panelAndListDefault" id="panelView" onclick="panelsView()">
             <i class="material-icons">apps</i>
             <p>Panel View</p>
@@ -47,6 +58,8 @@
         <p class="refAndAbstractDefault" id="abstractView" onclick="switchToAbstract()">View Abstract</p>
         <p class="refAndAbstractLight" id="refView" onclick="switchToReference()">View Reference</p>
     </div>
+
+    <button id="clearButton2" onclick="window.location.reload()"><img id="xIcon" src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>Clear Search</button>
     <h3 id="searchResults"></h3>
     <h3 id="noResults">No Results Were Found</h3>
 
@@ -58,5 +71,16 @@
     <script src="./scripts/populatePublications.js"></script>
 
     <script src="./scripts/script.js"></script>
+
+    <div id="credits">
+        <div id="creditLinks">
+            <a href="https://icons8.com/icon/21005/clear-symbol">Clear Symbol icon by Icons8</a>
+            <a href="https://icons8.com/icon/83218/search">Search icon by Icons8</a>
+            <a href="https://icons8.com/icon/56980/clear-symbol">Clear Symbol icon by Icons8</a>
+            <a href="https://icons8.com/icon/OZuepOQd0omj/delete">Delete icon by Icons8</a>
+        </div>
+    </div>
+
 </body>
+
 </html>
