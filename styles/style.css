@@ -12,7 +12,7 @@ body{
     background: transparent;
     position: fixed;
     padding: 20px;
-    width: 100%;
+    width: 100vw;
     height: 23px;
     z-index: 100000;
 }
@@ -407,6 +407,11 @@ body{
     #navBar{
         padding-top: 5px;
         background: grey;
+        font-size: 10px;
+    }
+    #navRight{
+        position: absolute;
+        right: 18%;
     }
     #pageTitle{
         font-size: 30px;
