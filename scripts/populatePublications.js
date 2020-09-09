@@ -596,12 +596,18 @@ function createPublication(data, pubItem) {
 }
 
 function clear() {
+    var searchResults = document.getElementById("searchResults");
     var noResults = document.getElementById("noResults");
+    var clearButton2 = document.getElementById("clearButton2");
     var panels = document.getElementById("panels");
     var lists = document.getElementById("ol");
     panels.innerHTML = " ";
     lists.innerHTML = " ";
+    panels.style.marginTop = "";
+    lists.style.marginTop = "";
+    searchResults.innerHTML = " ";
     noResults.innerHTML = " ";
+    clearButton2.style.display = "none";
 }
 
 function search(data, ID) {
@@ -616,6 +622,7 @@ function search(data, ID) {
         window.location.reload();
     }
     else {
+        clear();
         panels.style.marginTop = "200px"; //adding spacing above panels so search message does not overlap
         lists.style.marginTop = "200px"; //adding spacing above lists so search message does not overlap
         clearButton2.style.display = "flex";
@@ -623,7 +630,6 @@ function search(data, ID) {
         searchResults.innerHTML = "Search results for '" + userInput + "' in Reference and Abstract View:";
         searchResults.style.display = "inline";
         window.location = 'index.html#titleDescription';
-        clear();
         for (var pubItem in data) {
             var value = data[pubItem];
             for (var i = 0; i < value.length; i++) {
