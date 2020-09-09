@@ -4,14 +4,14 @@ class publication {
 
         this.listItem = "<li>";
         this.listPubTitle = "<p class='pubTitle'>" + dataArray[0] + "</p>";
-        this.listReference = "<p class='pubDes'>" + dataArray[1] + " <a href=" + dataArray[6] + "target='_blank'>" + dataArray[6] + "</a>" + "</p>";
+        this.listReference = "<p class='pubDes'>" + dataArray[1] + " <a href=" + dataArray[6] + " target='_blank'>" + dataArray[6] + "</a>" + "</p>";
         //link here
         this.listItemEnd = "<br><hr style='background-color: #666666; border: 0 none; width: 96%; height: 1px;'><br></li>";
 
         this.outerPanel = "<div class='panel'>";
         this.panelContent = "<div class='panelContent'>";
         this.pubTitle = "<h2 class='pubTitle'>" + dataArray[0] + "</h2>";
-        this.reference = "<p class='pubDes panDes'>" + dataArray[1] + "<br>" + "<a href=" + dataArray[6] + "target='_blank'>" + dataArray[6] + "</a>" + "</p>";
+        this.reference = "<p class='pubDes panDes'>" + dataArray[1] + "<br>" + "<a href=" + dataArray[6] + " target='_blank'>" + dataArray[6] + "</a>" + "</p>";
         this.abstract = "<p class='abstract'>" + dataArray[2] + "</p>";
         //divEnd for panelContent here
         this.panelExtras = "<div class='panelExtras'>";
@@ -19,7 +19,7 @@ class publication {
         this.icon = "<i class='material-icons'>event</i>";
         this.date = "<p class='date'>" + dataArray[3] + " " + dataArray[4] + "</p>";
         //divEnd for iconText here
-        this.link = "<div><a class='pubLink' href=" + dataArray[5] + "target='_blank'>View Publication</a></div>";
+        this.link = "<div><a class='pubLink' href=" + dataArray[5] + " target='_blank'>View Publication</a></div>";
         //divEnd for panelExtras here
         //divEnd for outerPanel here
 
