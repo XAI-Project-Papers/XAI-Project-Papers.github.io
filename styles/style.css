@@ -175,7 +175,6 @@ body{
 }
 
 #noResults{
-    display: none;
     font-weight: 500;
     color: grey;
     position: absolute;

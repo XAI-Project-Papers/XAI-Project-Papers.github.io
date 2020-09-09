@@ -596,10 +596,12 @@ function createPublication(data, pubItem) {
 }
 
 function clear() {
+    var noResults = document.getElementById("noResults");
     var panels = document.getElementById("panels");
     var lists = document.getElementById("ol");
     panels.innerHTML = " ";
     lists.innerHTML = " ";
+    noResults.innerHTML = " ";
 }
 
 function search(data, ID) {
@@ -633,7 +635,7 @@ function search(data, ID) {
             }
         }
         if (found == 0){
-            noResults.style.display = "inline";
+            noResults.innerHTML = "No Results Were Found";
         }
     }
 }
