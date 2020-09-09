@@ -237,7 +237,7 @@ body{
     max-width: 80vw;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(309px, 1fr));
-    gap: 25px;
+    gap: 50px;
 }
 
 .panel{
