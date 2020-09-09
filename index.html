@@ -29,7 +29,7 @@
                 <h1 style="display: inline; color: #DC4405">XAI</h1>
             </div>
             <input type="search" placeholder="Search for a publication (keyword, author, publication year, etc.)" id="searchBar" onsearch="search(data, 'searchBar')">
-            <button id="clearButton1" onclick="window.location.reload()"><img id="clearIcon" src="https://img.icons8.com/color/48/000000/clear-symbol.png" /></button>
+            <button id="clearButton1" onclick="clearSearch(data)"><img id="clearIcon" src="https://img.icons8.com/color/48/000000/clear-symbol.png" /></button>
             <button id="searchButton1" onclick="search(data, 'searchBar')"><img id="searchIcon" src="https://img.icons8.com/material-rounded/48/000000/search.png" /></button>
             <p id="titleDescription">Publications related to OSU's <a id="ud" href="https://today.oregonstate.edu/archives/2017/jun/research-aims-make-artificial-intelligence-explain-itself" target="_blank">eXplainable Artificial Intelligence</a> Project</p>
         </div>
@@ -52,7 +52,7 @@
         <p class="refAndAbstractLight" id="refView" onclick="switchToReference()">View Reference</p>
     </div>
 
-    <button id="clearButton2" onclick="window.location.reload()"><img id="xIcon" src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>Clear Search</button>
+    <button id="clearButton2" onclick="clearSearch(data)"><img id="xIcon" src="https://img.icons8.com/fluent/48/000000/delete-sign.png"/>Clear Search</button>
     <h3 id="searchResults"></h3>
     <h3 id="noResults"></h3>
 

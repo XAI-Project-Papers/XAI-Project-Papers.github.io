@@ -610,6 +610,15 @@ function clear() {
     clearButton2.style.display = "none";
 }
 
+function clearSearch(data){
+    clear();
+    populateAll(data);
+    var searchBar = document.getElementById("searchBar");
+    var searchBar2 = document.getElementById("searchBar2");
+    searchBar.value = null;
+    searchBar2.value = null;
+}
+
 function search(data, ID) {
     var panels = document.getElementById("panels");
     var lists = document.getElementById("ol");
