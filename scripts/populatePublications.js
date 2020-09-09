@@ -620,6 +620,7 @@ function clearSearch(data){
 }
 
 function search(data, ID) {
+    clear();
     var panels = document.getElementById("panels");
     var lists = document.getElementById("ol");
     var userInput = document.getElementById(ID).value;
@@ -627,11 +628,17 @@ function search(data, ID) {
     var searchResults = document.getElementById("searchResults");
     var noResults = document.getElementById("noResults");
     var clearButton2 = document.getElementById("clearButton2");
+    if (ID == 'searchBar'){
+        document.getElementById("searchBar2").value = userInput;
+    }
+    else {
+        document.getElementById("searchBar").value = userInput;
+    }
+    
     if (!input) {
         window.location.reload();
     }
     else {
-        clear();
         panels.style.marginTop = "200px"; //adding spacing above panels so search message does not overlap
         lists.style.marginTop = "200px"; //adding spacing above lists so search message does not overlap
         clearButton2.style.display = "flex";
