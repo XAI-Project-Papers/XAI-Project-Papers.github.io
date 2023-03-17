@@ -46,7 +46,7 @@ If a link is unavailable: use "./templates/noLink.html"
 */
 
 var data = {
-    "Data51": [
+    "Data50": [
         "Identifying Reasoning Flaws in Planning-Based RL Using Tree Explanations",
         "Kin-Ho Lam, Zhengxian Lin, Jed Irvine, Jonathan Dodge, Zeyad T Shureih, Roli Khanna, Minsuk Kahng, and Alan Fern. (submitted). Identifying Reasoning Flaws in Planning-Based RL Using Tree Explanations. IJCAI-PRICAI 2020 Workshop on Explainable Artificial Intelligence.",
         "Abstract Currently Unavailable. <br>For more information, look at the reference provided here: <br><br> Kin-Ho Lam, Zhengxian Lin, Jed Irvine, Jonathan Dodge, Zeyad T Shureih, Roli Khanna, Minsuk Kahng, and Alan Fern. (submitted). Identifying Reasoning Flaws in Planning-Based RL Using Tree Explanations. IJCAI-PRICAI 2020 Workshop on Explainable Artificial Intelligence.",
@@ -60,7 +60,7 @@ var data = {
     pub51.createPanel();
     pub51.createList(); */
 
-    "Data50": [
+    "Data49": [
         "Understanding Finite-State Representations of Recurrent Policy Networks",
         "Zhengxian Lin, Kim-Ho Lam, and Alan Fern. (2020). Understanding Finite-State Representations of Recurrent Policy Networks. ICML 2020 Workshop on XXAI: Extending Explainable AI Beyond Deep Models and Classifiers",
         "We introduce an approach for understanding finite-state machine (FSM) representations of recurrent policy networks. Recent work focused on minimizing FSMs to gain high-level insight, however, minimization can obscure a deeper understanding by merging states that are semantically distinct. Conversely, our approach starts with an unminimized machine and applies more-interpretable reductions that preserve the key decision points of the policy. We also contribute a saliency tool to attain a deeper understanding of the role of observations in the decisions. Our case studies on policies from 7 Atari games and 3 control benchmarks demonstrate that the approach can reveal insights that have not been noticed in prior work.",
@@ -72,16 +72,6 @@ var data = {
 
 
     //for black - Related paper
-
-    "Data49": [
-        "and Understanding Finite-State Representations of Recurrent Policy Networks",
-        "Mohamad Danesh, Anurag Koul, Alan Fern. (2020). and Understanding Finite-State Representations of Recurrent Policy Networks. ICML 2020 Workshop on XXAI: Extending Explainable AI Beyond Deep Models and Classifiers",
-        "Abstract Currently Unavailable. <br>For more information, look at the reference provided here: <br><br> Mohamad Danesh, Anurag Koul, Alan Fern. (2020). and Understanding Finite-State Representations of Recurrent Policy Networks. ICML 2020 Workshop on XXAI: Extending Explainable AI Beyond Deep Models and Classifiers.",
-        " ",
-        "2020",
-        "./templates/noLink.html",
-        "./templates/noLink.html"
-    ],
 
     "Data48": [
         "The Shoutcasters, the Game Enthusiasts, and the AI: Foraging for Explanations of Real-Time Strategy Players",
